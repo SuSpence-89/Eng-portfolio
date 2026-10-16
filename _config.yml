@@ -8,7 +8,8 @@
 # Main Page Setup
 
 title: Spencer Holmes's Portfolio # This is what shows up in the tab of the browser
-
+url: "https://suspence-89.github.io"
+baseurl: "/Eng-portfolio"
 
 
 # Hero Section
