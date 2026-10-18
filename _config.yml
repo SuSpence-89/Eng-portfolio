@@ -1,9 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
 
 # Main Page Setup
 
@@ -14,11 +8,17 @@ baseurl: "/Eng-portfolio"
 
 # Hero Section
 name: Spencer Holmes
-headline: Welcome to my portfolio.
+headline: Mechanical Engineering Technologist | RCAF Veteran
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  Write an awesome intro and discuss your highlights and qualification. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+I bring hands-on experience in military aviation maintenance & mechanical engineering design,
+  I bring practical engineering experience in sectors such as; 
+  Industrial power generation, within Alberta energy sector,
+  Industrial fuel & lubrication delivery in the mining enviroment,
+  Diesel fuel delivery, wastewaster lift station and sand convayance in the railroad sector,
+  I also hold extensive experience in technical industrial energy procurement & international logistics.
+  
+  Explore my projects in CAD modelling, 3D Printing, technical drafting
+  These projects represent my strong interest in energy and the environmental.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: assets/images/SpencerHolmes_Square.jpg
