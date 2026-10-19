@@ -7,18 +7,14 @@ baseurl: "/Eng-portfolio"
 
 
 # Hero Section
-name: Spencer Holmes
+name: Spencer Holmes, CD, T.T.
+tagline: "Where Systems Come Together."
 headline: Mechanical Design | Electrical Systems | Renewable Energy | Technical Innovation
 description: >- # dont remove this line. this will ignore all new lines until the next section
-    I'm a Mechanical Engineering Technologist and Royal Canadian Air Force veteran with a multidisciplinary background spanning mechanical design, electrical and renewable energy technologies, aviation maintenance, and industrial systems.
-    
-    My approach to engineering is grounded in the understanding that successful designs require more than individual technical disciplines. Mechanical components, electrical systems, energy efficiency, manufacturing constraints, and operational requirements must work together to create solutions that perform reliably in the real world.
-    
-    I bring together practical field experience, 3D CAD modelling, technical analysis, and an understanding of interconnected engineering systems to approach challenges with both technical precision and a broader systems perspective.
-    
-    Building on my Mechanical Engineering Technology education at NAIT, I plan to further develop my expertise through the University of Calgary's Bachelor of Science in Energy Engineering program, expanding my focus on energy technologies and multidisciplinary engineering applications.
-    
-    This portfolio explores the engineering projects, technical challenges, and design decisions that reflect my experience, capabilities, and continuing professional development.
+   
+  I'm a Mechanical Engineering Technologist and Royal Canadian Air Force veteran with a multidisciplinary background in mechanical design, electrical systems, renewable energy, and industrial technologies.
+
+  Combining hands-on experience with technical analysis and 3D CAD modelling, I approach engineering challenges with a focus on functionality, reliability, and practical real-world solutions.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: assets/images/SpencerHolmes_Square.jpg
