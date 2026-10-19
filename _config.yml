@@ -8,17 +8,17 @@ baseurl: "/Eng-portfolio"
 
 # Hero Section
 name: Spencer Holmes
-headline: Mechanical Engineering Technologist | RCAF Veteran
+headline: Mechanical Design | Electrical Systems | Renewable Energy | Technical Innovation
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  I bring hands-on experience in military aviation maintenance & mechanical engineering design,
-  I bring practical engineering experience in sectors such as; 
-  Industrial power generation, within Alberta energy sector,
-  Industrial fuel & lubrication delivery in the mining enviroment,
-  Diesel fuel delivery, wastewaster lift station and sand convayance in the railroad sector,
-  I also hold extensive experience in technical industrial energy procurement & international logistics.
-  
-  Explore my projects in CAD modelling, 3D Printing, technical drafting
-  These projects represent my strong interest in energy and the environmental.
+    I'm a Mechanical Engineering Technologist and Royal Canadian Air Force veteran with a multidisciplinary background spanning mechanical design, electrical and renewable energy technologies, aviation maintenance, and industrial systems.
+    
+    My approach to engineering is grounded in the understanding that successful designs require more than individual technical disciplines. Mechanical components, electrical systems, energy efficiency, manufacturing constraints, and operational requirements must work together to create solutions that perform reliably in the real world.
+    
+    I bring together practical field experience, 3D CAD modelling, technical analysis, and an understanding of interconnected engineering systems to approach challenges with both technical precision and a broader systems perspective.
+    
+    Building on my Mechanical Engineering Technology education at NAIT, I plan to further develop my expertise through the University of Calgary's Bachelor of Science in Energy Engineering program, expanding my focus on energy technologies and multidisciplinary engineering applications.
+    
+    This portfolio explores the engineering projects, technical challenges, and design decisions that reflect my experience, capabilities, and continuing professional development.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: assets/images/SpencerHolmes_Square.jpg
@@ -33,8 +33,8 @@ resume-url: https://drive.google.com/file/d/1hbcDYHCYQG0sllKOnOWKIhD_9in4wbIs/vi
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
   linkedin: spencer-holmes-veteran-x    # https://www.linkedin.com/in/{your url slug} 
-  github: leea12    # https://github.com/{your url slug} 
-  stackoverflow: test      # https://stackoverflow.com/users/{your url slug}
+  github: SuSpence-89    # https://github.com/{your url slug} 
+  stackoverflow:       # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
   x-twitter:   # https://x.com/{your url slug} 
   threads:            # https://threads.net/@{your url slug} 
