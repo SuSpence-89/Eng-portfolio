@@ -47,6 +47,19 @@
 
     </div>
 
+<!-- Temporary portfolio diagnostic -->
+<div style="padding:12px; border:1px solid #ddd; margin-bottom:20px;">
+  <strong>Portfolio Diagnostic</strong>
+  <p>Projects detected: {{ site.projects.size }}</p>
+
+  {% for item in site.projects %}
+    <p>
+      {{ item.title }} —
+      Published flag: {{ item.show_in_portfolio }}
+    </p>
+  {% endfor %}
+</div>
+
     <!-- Portfolio Cards -->
     <div class="grid-container selected-work-grid">
 
