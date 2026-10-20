@@ -78,17 +78,15 @@
 
                     <div class="project-card">
 
+                        
                         {% if item['main-image'] %}
 
-                            {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
-                            {% assign image_name = item['main-image'] | remove_first: "/" %}
-                            {% assign image_path = "/" | append: folder_path | append: "/" | append: image_name %}
-
-                            <img src="{{ image_path | relative_url }}"
+                            <img src="{{ item['main-image'] | relative_url }}"
                                  alt="{{ item.title | escape }}"
                                  loading="lazy">
 
                         {% endif %}
+
 
                         <span class="selected-work-type">
                             {{ item.portfolio_type | default: "Portfolio Entry" }}
