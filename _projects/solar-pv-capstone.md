@@ -6,6 +6,9 @@ description: "A hands-on renewable energy capstone involving residential-style P
 main-image: /assets/images/solar-pv-capstone/cover.jpg
 
 portfolio_type: "Academic Capstone"
+institution: "Lakeland College"
+project_location: "Vermilion, Alberta"
+project_date: "June 2025"
 show_in_portfolio: true
 portfolio_categories:
   - energy
