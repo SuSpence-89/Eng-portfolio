@@ -1,26 +1,305 @@
-<!-- SECTION 3: project -->
-<section id="projects" class="project-grid-section">
-    <h2>Projects</h2>
 
-    <div class="grid-container">
-        {% for item in site.projects %}
-    <a href="{{ item.url | relative_url }}" class="project-link">
-        <div class="project-card">
-            {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
-            {% assign image_path = "/" | append: folder_path | append: item['main-image'] %}
-            <img src="{{ image_path | relative_url }}" alt="{{ item.title }} image">
-            <h3 class="project-title">{{ item.title }}</h3>
-            <div class="project-skills">
-                {% for skill in item.skills %}
-                    <span class="skill">{{ skill }}</span>
-                {% endfor %}
-            </div>
-            <p class="project-description">{{ item.description }}</p>
-            <button class="read-more">Read more →</button>
-        </div>
-    </a>
-{% endfor %}
+<!-- SECTION 3: Selected Work -->
+<section id="projects" class="project-grid-section selected-work">
+
+    <h2>Selected Work</h2>
+
+    <p class="selected-work-intro">
+        A collection of technical projects, specialized experience, and
+        professional initiatives spanning mechanical and electrical systems,
+        energy technologies, aviation, and operational systems development.
+    </p>
+
+    <!-- Portfolio Category Filters -->
+    <div class="selected-work-filters" role="group" aria-label="Filter portfolio categories">
+
+        <button type="button" class="selected-work-filter active" data-filter="all" aria-pressed="true">
+            All Work
+        </button>
+
+        <button type="button" class="selected-work-filter" data-filter="mechanical" aria-pressed="false">
+            Mechanical
+        </button>
+
+        <button type="button" class="selected-work-filter" data-filter="electrical" aria-pressed="false">
+            Electrical
+        </button>
+
+        <button type="button" class="selected-work-filter" data-filter="energy" aria-pressed="false">
+            Energy
+        </button>
+
+        <button type="button" class="selected-work-filter" data-filter="printing" aria-pressed="false">
+            3D Printing
+        </button>
+
+        <button type="button" class="selected-work-filter" data-filter="programming" aria-pressed="false">
+            Programming
+        </button>
+
+        <button type="button" class="selected-work-filter" data-filter="aviation" aria-pressed="false">
+            Aviation
+        </button>
+
+        <button type="button" class="selected-work-filter" data-filter="systems" aria-pressed="false">
+            Systems & Logistics
+        </button>
+
     </div>
 
+    <!-- Portfolio Cards -->
+    <div class="grid-container selected-work-grid">
 
- </section>
+        {% assign visible_count = 0 %}
+
+        {% for item in site.projects %}
+
+            {% if item.show_in_portfolio == true %}
+
+                {% assign visible_count = visible_count | plus: 1 %}
+                {% assign categories = item.portfolio_categories | join: ' ' %}
+
+                <a href="{{ item.url | relative_url }}"
+                   class="project-link selected-work-card"
+                   data-categories="{{ categories | escape }}">
+
+                    <div class="project-card">
+
+                        {% if item['main-image'] %}
+
+                            {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
+                            {% assign image_name = item['main-image'] | remove_first: "/" %}
+                            {% assign image_path = "/" | append: folder_path | append: "/" | append: image_name %}
+
+                            <img src="{{ image_path | relative_url }}"
+                                 alt="{{ item.title | escape }}"
+                                 loading="lazy">
+
+                        {% endif %}
+
+                        <span class="selected-work-type">
+                            {{ item.portfolio_type | default: "Portfolio Entry" }}
+                        </span>
+
+                        <h3 class="project-title">
+                            {{ item.title }}
+                        </h3>
+
+                        {% if item.skills %}
+                            <div class="project-skills">
+                                {% for skill in item.skills %}
+                                    <span class="skill">{{ skill }}</span>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        <p class="project-description">
+                            {{ item.description }}
+                        </p>
+
+                        <span class="read-more">
+                            View Details &rarr;
+                        </span>
+
+                    </div>
+
+                </a>
+
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+    <!-- Empty Category Message -->
+    <p id="selected-work-no-matches" hidden>
+        No published entries in this category yet.
+    </p>
+
+    {% if visible_count == 0 %}
+        <p class="selected-work-empty">
+            Portfolio entries are currently being prepared.
+            Check back as new work is added.
+        </p>
+    {% endif %}
+
+</section>
+
+
+<!-- Selected Work Styling -->
+<style>
+
+.selected-work {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.selected-work-intro {
+    max-width: 850px;
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.selected-work-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.selected-work-filter {
+    padding: 9px 18px;
+    border: 1px solid #d5d5d5;
+    border-radius: 25px;
+    background: transparent;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.selected-work-filter:hover {
+    border-color: #4a76ee;
+    color: #4a76ee;
+}
+
+.selected-work-filter.active {
+    background: #1a1c20;
+    color: #ffffff;
+    border-color: #1a1c20;
+}
+
+.selected-work .selected-work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.selected-work .selected-work-card {
+    display: block;
+    min-width: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.selected-work .selected-work-card[hidden] {
+    display: none !important;
+}
+
+.selected-work .project-card {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.selected-work .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.selected-work .project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.selected-work-type {
+    display: block;
+    font-size: 12px;
+    color: #687080;
+    margin-bottom: 8px;
+}
+
+.selected-work .project-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.selected-work .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4a76ee;
+    font-weight: 500;
+}
+
+.selected-work-empty,
+#selected-work-no-matches {
+    text-align: center;
+    padding: 30px;
+    color: #687080;
+}
+
+@media (max-width: 700px) {
+    .selected-work .selected-work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .selected-work-filter {
+        padding: 8px 13px;
+        font-size: 13px;
+    }
+}
+
+</style>
+
+
+<!-- Interactive Category Filtering -->
+<script>
+
+(function () {
+
+    const section = document.querySelector(".selected-work");
+
+    if (!section) return;
+
+    const buttons = section.querySelectorAll(".selected-work-filter");
+    const cards = section.querySelectorAll(".selected-work-card");
+    const emptyMessage = section.querySelector("#selected-work-no-matches");
+
+    buttons.forEach(function(button) {
+
+        button.addEventListener("click", function() {
+
+            const selectedCategory = button.dataset.filter;
+            let visibleCards = 0;
+
+            buttons.forEach(function(otherButton) {
+                const isActive = otherButton === button;
+                otherButton.classList.toggle("active", isActive);
+                otherButton.setAttribute("aria-pressed", String(isActive));
+            });
+
+            cards.forEach(function(card) {
+
+                const categories = (card.dataset.categories || "").split(/\s+/);
+
+                const matches =
+                    selectedCategory === "all" ||
+                    categories.includes(selectedCategory);
+
+                card.hidden = !matches;
+
+                if (matches) {
+                    visibleCards++;
+                }
+
+            });
+
+            if (emptyMessage) {
+                emptyMessage.hidden =
+                    visibleCards > 0 || cards.length === 0;
+            }
+
+        });
+
+    });
+
+})();
+
+</script>
