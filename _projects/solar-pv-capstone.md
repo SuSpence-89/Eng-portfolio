@@ -23,11 +23,6 @@ skills:
   - Troubleshooting
 ---
 
-**Lakeland College | Sustainable Energy Technology | June 2025**
-
-**Location:** Vermilion, Alberta  
-**Project Type:** Academic Capstone — Practical Field Experience  
-**Focus:** Photovoltaic installation, electrical integration, solar tracking systems, energy storage and monitoring
 
 ## Project Overview
 
