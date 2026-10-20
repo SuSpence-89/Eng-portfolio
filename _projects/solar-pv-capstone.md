@@ -3,7 +3,7 @@ layout: post
 permalink: /projects/solar-pv-capstone/
 title: "Solar Photovoltaic Systems — Installation, Integration & Monitoring"
 description: "A hands-on renewable energy capstone involving residential-style PV installation, microinverters, electromechanical solar tracker restoration, battery testing, and system monitoring."
-main-image: /cover.jpg
+main-image: /assets/images/solar-pv-capstone/cover.jpg
 
 portfolio_type: "Academic Capstone"
 show_in_portfolio: true
