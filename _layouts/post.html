@@ -1,35 +1,263 @@
+
 ---
 layout: wrapper
 ---
 
-<div class="post-view">
-    <div class="summary">
-        
-       
-        {% assign folder_path = page.path | split: "/" | slice: 0, 2 | join: "/" %}
-        {% assign image_path = "/" | append: folder_path | append: page['main-image'] %}       
-        <img src="{{ image_path }}" alt="{{ page.title }} image">
-        
-        <div class="title-header">
-            <h1>{{page.title}}</h1>
-        </div>
-        
-        <div class="project-description">
-            <h2>Project Overview</h2>
-            <p>{{ page.description }}</p>
-        </div>
-        <div class="skills-card">
-            <h2>Skills Used</h2> 
-            <div class="skills-list">
-                {% for skill in page.skills %}
-                <span class="skill">{{ skill }}</span>    
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-      
-    <div class="content">
-        {{content}}
-    </div>
-</div>
+<!-- Professional Portfolio Case Study -->
+<article class="post-view portfolio-post">
 
+    <!-- Project Introduction -->
+    <header class="portfolio-post-header">
+
+        {% if page.portfolio_type %}
+        <p class="portfolio-post-type">
+            {{ page.portfolio_type }}
+        </p>
+        {% endif %}
+
+        <h1>{{ page.title }}</h1>
+
+        <!-- Project Information -->
+        <div class="portfolio-post-meta">
+            {% if page.institution %}
+                <span>{{ page.institution }}</span>
+            {% endif %}
+
+            {% if page.project_location %}
+                <span>{{ page.project_location }}</span>
+            {% endif %}
+
+            {% if page.project_date %}
+                <span>{{ page.project_date }}</span>
+            {% endif %}
+        </div>
+
+        {% if page.description %}
+        <p class="portfolio-post-summary">
+            {{ page.description }}
+        </p>
+        {% endif %}
+
+    </header>
+
+    <!-- Featured Project Photograph -->
+    {% if page['main-image'] %}
+    <figure class="portfolio-post-cover">
+        <img
+            src="{{ page['main-image'] | relative_url }}"
+            alt="{{ page.cover_alt | default: page.title | escape }}">
+
+        {% if page.cover_caption %}
+        <figcaption>
+            {{ page.cover_caption }}
+        </figcaption>
+        {% endif %}
+    </figure>
+    {% endif %}
+
+    <!-- Technical Skills -->
+    {% if page.skills and page.skills.size > 0 %}
+    <div class="portfolio-post-skills">
+        {% for skill in page.skills %}
+            <span class="portfolio-skill">{{ skill }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Main Case Study -->
+    <div class="portfolio-post-body">
+        {{ content }}
+    </div>
+
+</article>
+
+
+<!-- Portfolio Case Study Styling -->
+<style>
+
+.post-view.portfolio-post {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 35px 28px 80px;
+    box-sizing: border-box;
+}
+
+/* Introduction */
+
+.portfolio-post-header {
+    margin-bottom: 28px;
+}
+
+.portfolio-post-type {
+    color: #4a76ee;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.portfolio-post-header h1 {
+    font-size: clamp(28px, 3.5vw, 42px);
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0 0 18px;
+}
+
+.portfolio-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    color: #687080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.portfolio-post-summary {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #394454;
+    max-width: 780px;
+    margin: 0;
+}
+
+/* Featured Photograph */
+
+.portfolio-post-cover {
+    margin: 0 0 28px;
+    width: 100%;
+}
+
+.portfolio-post-cover img {
+    display: block;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.portfolio-post-cover figcaption {
+    font-size: 13px;
+    color: #687080;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Skills */
+
+.portfolio-post-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 38px;
+}
+
+.portfolio-skill {
+    background: #f3f5fb;
+    color: #4a76ee;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Main Text */
+
+.portfolio-post-body {
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.portfolio-post-body h2 {
+    font-size: 24px;
+    line-height: 1.35;
+    margin-top: 42px;
+    margin-bottom: 16px;
+}
+
+.portfolio-post-body h3 {
+    font-size: 19px;
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.portfolio-post-body p {
+    margin-bottom: 18px;
+}
+
+.portfolio-post-body ul {
+    padding-left: 25px;
+    margin-bottom: 22px;
+}
+
+.portfolio-post-body li {
+    margin-bottom: 8px;
+}
+
+/* Supporting Project Photographs */
+
+.portfolio-post-body figure {
+    max-width: 760px;
+    margin: 32px auto;
+    text-align: center;
+}
+
+.portfolio-post-body figure img {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 520px;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.portfolio-post-body figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #687080;
+    text-align: center;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 700px) {
+
+    .post-view.portfolio-post {
+        padding: 22px 16px 50px;
+    }
+
+    .portfolio-post-header h1 {
+        font-size: 28px;
+    }
+
+    .portfolio-post-summary {
+        font-size: 15px;
+    }
+
+    .portfolio-post-cover img {
+        height: 230px;
+    }
+
+    .portfolio-post-body {
+        font-size: 15px;
+    }
+
+    .portfolio-post-body h2 {
+        font-size: 21px;
+    }
+
+    .portfolio-post-body figure img {
+        max-height: 400px;
+    }
+
+}
+
+</style>
