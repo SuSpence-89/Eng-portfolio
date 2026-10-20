@@ -93,6 +93,19 @@ This exercise provided practical experience in systematic troubleshooting, elect
   <figcaption>Rear view of the solar tracking array, including its support structure, cabling and central mechanical assembly.</figcaption>
 </figure>
 
+<figure>
+  <img
+    src="{{ '/projects/solar-pv-capstone/solar-array-closeup.jpg' | relative_url }}"
+    alt="Close-up of a photovoltaic array at the Lakeland College renewable energy training site"
+    loading="lazy"
+    style="display:block;width:100%;height:auto;border-radius:10px;">
+
+  <figcaption>
+    Photovoltaic array at the Lakeland College training site,
+    Vermilion, Alberta — June 2025.
+  </figcaption>
+</figure>
+
 ## 4. Battery Storage & Electrical Monitoring
 
 The capstone also included inspection and evaluation of battery-backed photovoltaic equipment.
