@@ -69,13 +69,20 @@ layout: wrapper
     </div>
     {% endif %}
 
+
     <!-- Main Case Study -->
     <div class="portfolio-post-body">
         {{ content }}
     </div>
 
-</article>
+    <!-- Return to Portfolio -->
+    <div class="portfolio-bottom-navigation">
+        <a href="{{ '/projects/' | relative_url }}" class="portfolio-back-link">
+            &larr; Back to Portfolio
+        </a>
+    </div>
 
+</article>
 
 <!-- Portfolio Case Study Styling -->
 <style>
