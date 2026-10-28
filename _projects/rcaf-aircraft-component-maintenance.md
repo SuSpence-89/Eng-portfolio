@@ -15,7 +15,7 @@ project_date: "2013–2015"
 show_in_portfolio: true
 portfolio_categories:
   - mechanical
-  - aerospace
+  - aviation
 
 skills:
   - Aircraft Component Overhaul
