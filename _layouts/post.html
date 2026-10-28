@@ -49,8 +49,9 @@ layout: wrapper
     {% if page['main-image'] %}
     <figure class="portfolio-post-cover">
         <img
-            src="{{ page['main-image'] | relative_url }}"
-            alt="{{ page.cover_alt | default: page.title | escape }}">
+    src="{{ page['main-image'] | relative_url }}"
+    alt="{{ page.cover_alt | default: page.title | escape }}"
+    style="object-position: {{ page.cover_position | default: 'center' }};">
 
         {% if page.cover_caption %}
         <figcaption>
