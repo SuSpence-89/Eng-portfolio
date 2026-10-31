@@ -55,6 +55,16 @@ My documented responsibilities included instructing or supervising technicians d
 
 These activities required interpreting technical instructions, communicating task requirements, checking work at appropriate stages, and ensuring personnel understood both the mechanical work and the associated safety precautions. Where I acted as an instructor or supervisor, I remained responsible for working within the specific maintenance privileges and inspection arrangements applicable to the task.
 
+### Featured Troubleshooting Case Study — CT-114 Nosewheel Steering Fault (2016–2017)
+
+**Reported discrepancy.** In approximately late 2016 to early 2017, a CT-114 Tutor pilot reported difficulty steering the aircraft while taxiing on the hangar line. The discrepancy was recorded on a **CF 349 Aircraft Maintenance Report**. Several senior Aviation Systems Technicians spent much of the day attempting to reproduce the fault, without success, and the team was considering a **No Fault Found (NFF)** disposition.
+
+**My investigation.** I independently examined the nose landing gear from beneath the aircraft, concentrating on how the mechanical steering engagement components were intended to work. In the deployed and locked configuration, a steering engagement pin is intended to seat in a corresponding feature of the yoke. I noticed an unusual **metallic rubbing/wear mark** near the expected engagement point. Its location suggested that the pin might be contacting the yoke without fully engaging, which could explain the pilot's reported steering difficulty even though the fault had been hard to reproduce.
+
+**Communication and confirmed result.** Before leaving for a scheduled appointment, I explained the wear evidence and my suspected fault mechanism to the maintenance crew. When I returned several hours later, the team had investigated that area, **confirmed the steering engagement issue I identified**, and completed the corrective maintenance. My contribution was the observation, mechanical analysis, and diagnosis; **other technicians carried out the repair**.
+
+**Technical significance.** This experience reinforced the value of examining a mechanism's intended operation, recognizing subtle physical wear evidence, and communicating a clear, testable hypothesis. It demonstrated that a difficult-to-reproduce aircraft discrepancy can sometimes be resolved through focused mechanical inspection rather than repeated attempts to recreate the symptom.
+
 ## 2. CF-188 Hornet Servicing & Support
 
 During my earlier assignment at AETE, I supported **CF-188 Hornet** servicing and ground operations as part of a maintenance team. This included assisting with aircraft movements, servicing equipment, and routine preparation activities while learning the aircraft's local operating and maintenance procedures.
