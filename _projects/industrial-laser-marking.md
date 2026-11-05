@@ -253,6 +253,120 @@ These projects often required more attention to the visual presentation of the f
 Depending on the application, I needed to consider the proportions of the artwork, text placement, marking contrast, and suitability of the selected material.
 
 The variety of projects provided opportunities to apply the same fundamental laser-marking principles across different types of workpieces.
+### Selected Laser Engraving Projects — Photo Gallery
+
+The following examples illustrate several applications of the
+RMI laser-marking system, including decorative engraving,
+personalized commemorative items, and marking on metallic surfaces.
+
+These projects required consideration of artwork preparation,
+surface characteristics, marking parameters, and the appearance
+of the finished product.
+
+#### Project Example 1 — Multicolour Engraving on Curved Brass
+
+<figure>
+  <img src="{{ '/assets/images/laser-marking/curved-brass-knight.jpg' | relative_url }}"
+       alt="Polished brass casing featuring a multicolour knight with sword and shield, created through experimental laser marking."
+       loading="lazy">
+  <figcaption>
+    Experimental laser marking on polished brass.
+    By adjusting laser parameters and experimenting with
+    focal distance across the curved surface, I achieved
+    red, orange, blue, and purple colour variations within
+    the knight-and-shield emblem.
+  </figcaption>
+</figure>
+
+This example was particularly interesting because the curved
+surface created variations in the distance between the laser
+and the workpiece.
+
+Rather than treating this exclusively as a limitation,
+I experimented with the marking conditions to produce a
+distinctive multicolour result.
+
+#### Project Example 2 — Personalized Tribute Plaque
+
+<figure>
+  <img src="{{ '/assets/images/laser-marking/engraved-tribute-plaque-surname-blurred.jpg' | relative_url }}"
+       alt="Personalized engraved tribute plaque with lettering and decorative artwork."
+       loading="lazy">
+  <figcaption>
+    Personalized tribute plaque demonstrating engraved lettering,
+    decorative elements, and text layout.
+    The recipient's surname has been obscured for privacy.
+  </figcaption>
+</figure>
+
+Personalized plaques provided opportunities to work with
+different lettering styles, text sizes, graphic elements,
+and layout arrangements.
+
+These projects emphasized the importance of visual presentation,
+alignment, and legibility.
+
+#### Project Example 3 — Reflective Metal Memorial Plaque
+
+<figure>
+  <img src="{{ '/assets/images/laser-marking/engraved-metal-memorial-plaque-surname-blurred.jpg' | relative_url }}"
+       alt="Reflective metal memorial plaque featuring engraved lettering and graphic details."
+       loading="lazy">
+  <figcaption>
+    Engraved memorial plaque featuring personalized lettering
+    and decorative graphics on a reflective metallic surface.
+    The surname has been obscured for privacy.
+  </figcaption>
+</figure>
+
+Marking reflective metallic surfaces presented different
+visual considerations from marking painted or coated materials.
+
+The appearance of the finished engraving depended on the
+relationship between the surface characteristics, selected
+marking parameters, and the desired contrast.
+
+#### Project Example 4 — Decorative Memorial Engraving
+
+<figure>
+  <img src="{{ '/assets/images/laser-marking/engraved-green-memorial-plaque-surname-blurred.png' | relative_url }}"
+       alt="Green reflective memorial plaque featuring detailed floral artwork and multiple engraved text elements."
+       loading="lazy">
+  <figcaption>
+    Decorative memorial engraving incorporating floral artwork,
+    multiple text styles, and fine graphic details.
+    Surnames have been obscured for privacy.
+  </figcaption>
+</figure>
+
+This example demonstrates the combination of decorative
+graphics and personalized text within a single marking layout.
+
+The floral artwork contains curved features and fine details,
+while the lettering incorporates different sizes and styles.
+
+These characteristics required attention to artwork placement,
+visual balance, and the appearance of the finished mark.
+
+### Technical Value of the Completed Projects
+
+Together, these examples illustrate the versatility of
+industrial laser-marking equipment.
+
+They demonstrate practical experience involving:
+
+- Preparation and positioning of text and graphic artwork.
+- Marking on metallic and reflective surfaces.
+- Experimental marking on curved workpieces.
+- Evaluation of engraving appearance and contrast.
+- Selection and adjustment of marking parameters.
+- Personalized and commemorative engraving.
+- Reuse of successful laser-marking programs.
+- Integration of decorative graphics with functional lettering.
+
+The projects also demonstrate my willingness to experiment
+with unfamiliar applications and develop appropriate marking
+conditions rather than relying exclusively on standard presets.
 
 ## 8. Technical Documentation & Reusable Settings
 
