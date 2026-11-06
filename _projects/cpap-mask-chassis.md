@@ -6,7 +6,7 @@ title: "CPAP Mask Chassis — Reverse Engineering & Additive Manufacturing"
 
 description: "An ongoing reverse-engineering and CAD project exploring a 3D-printable replacement for a frequently damaged CPAP mask strap-retention chassis."
 
-main-image: /assets/images/3d-printing/cpap-mask-chassis/cpap-chassis-original-front.jpg
+main-image: /assets/images/cpap-mask-chassis/cpap-chassis-original-front.jpg
 cover_position: center center
 cover_alt: "Original transparent CPAP mask chassis featuring strap-attachment openings and a circular mask interface."
 cover_caption: "Original CPAP mask chassis used as the reference component for reverse engineering and CAD development."
@@ -92,7 +92,7 @@ The original component incorporates several distinct geometric features:
 These features contribute to the component's overall shape and its ability to connect the mask to the supporting straps.
 
 <figure>
-  <img src="{{ '/assets/images/3d-printing/cpap-mask-chassis/cpap-chassis-original-front.jpg' | relative_url }}"
+  <img src="{{ '/assets/images/cpap-mask-chassis/cpap-chassis-original-front.jpg' | relative_url }}"
        alt="Front view of an original transparent CPAP mask chassis with circular mask opening and strap-retention features."
        loading="lazy">
   <figcaption>
@@ -103,7 +103,7 @@ These features contribute to the component's overall shape and its ability to co
 </figure>
 
 <figure>
-  <img src="{{ '/assets/images/3d-printing/cpap-mask-chassis/cpap-chassis-original-angle.jpg' | relative_url }}"
+  <img src="{{ '/assets/images/cpap-mask-chassis/cpap-chassis-original-angle.jpg' | relative_url }}"
        alt="Angled view of the original CPAP mask chassis showing the depth and shape of its moulded features."
        loading="lazy">
   <figcaption>
@@ -130,7 +130,7 @@ This involved identifying major dimensions, reference points, curved transitions
 The initial sketch provides a basis for constructing the part in three dimensions.
 
 <figure>
-  <img src="{{ '/assets/images/3d-printing/cpap-mask-chassis/cpap-chassis-dimensioned-sketch.png' | relative_url }}"
+  <img src="{{ '/assets/images/cpap-mask-chassis/cpap-chassis-dimensioned-sketch.png' | relative_url }}"
        alt="Dimensioned CAD sketch of a CPAP mask chassis featuring an extended upper section, curved transitions, and a circular opening."
        loading="lazy">
   <figcaption>
@@ -167,7 +167,7 @@ The first modelling stage involved creating an extrusion from the developed prof
 This established the initial solid geometry and provided a foundation for subsequent modelling operations.
 
 <figure>
-  <img src="{{ '/assets/images/3d-printing/cpap-mask-chassis/cpap-chassis-initial-cad.png' | relative_url }}"
+  <img src="{{ '/assets/images/cpap-mask-chassis/cpap-chassis-initial-cad.png' | relative_url }}"
        alt="Initial three-dimensional CAD extrusion of the replacement CPAP mask chassis showing the curved body profile."
        loading="lazy">
   <figcaption>
