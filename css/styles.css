@@ -946,4 +946,299 @@ footer p {
 
       
 }
+/* =========================================================
+   PORTFOLIO ENHANCEMENTS
+   Rotating Portraits, Homepage Buttons, About Me,
+   Project Cards, and Mobile Improvements
+   ========================================================= */
 
+
+/* ---------------------------------------------------------
+   1. HOMEPAGE ACTION BUTTONS
+   --------------------------------------------------------- */
+
+.hero-section .text .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.hero-section .text .hero-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 9px 14px;
+    margin: 0;
+
+    border: 2px solid var(--link-color);
+    border-radius: 6px;
+
+    color: var(--link-color);
+    background-color: transparent;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.hero-section .text .hero-actions a span {
+    color: inherit;
+}
+
+.hero-section .text .hero-actions a:hover {
+    background-color: var(--light-background-color);
+    transform: translateY(-2px);
+}
+
+.hero-section .text .hero-actions a:focus-visible {
+    outline: 3px solid var(--highlight-color);
+    outline-offset: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   2. ROTATING PROFILE PHOTOGRAPH
+   --------------------------------------------------------- */
+
+.hero-section .headshot img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.08);
+
+    transition:
+        box-shadow 0.3s ease;
+}
+
+.hero-section .headshot img:hover {
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Fade-in when the portrait changes */
+
+@keyframes portfolioPortraitFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.hero-section .headshot img.portrait-fade-in {
+    animation:
+        portfolioPortraitFadeIn 0.55s ease both;
+}
+
+
+/* ---------------------------------------------------------
+   3. ABOUT ME SECTION
+   --------------------------------------------------------- */
+
+.about-section {
+    max-width: 1050px;
+
+    margin: 35px auto 90px;
+    padding: 30px 35px;
+
+    background-color: var(--light-background-color);
+
+    border-radius: 14px;
+
+    scroll-margin-top: 25px;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    font-weight: 600;
+
+    color: var(--text-color);
+
+    margin-bottom: 18px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: var(--text-color);
+
+    margin-bottom: 14px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   4. INTERACTIVE PROJECT CARDS
+   --------------------------------------------------------- */
+
+.project-grid-section .grid-container .project-link .project-card {
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.project-grid-section .grid-container .project-link:hover .project-card,
+.project-grid-section .grid-container .project-link:focus-visible .project-card {
+
+    transform: translateY(-4px);
+
+    border-color: rgba(74, 118, 238, 0.30);
+
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Very subtle image enlargement */
+
+.project-grid-section .grid-container .project-link .project-card img {
+
+    transition:
+        transform 0.25s ease;
+}
+
+.project-grid-section .grid-container .project-link:hover .project-card img {
+
+    transform: scale(1.025);
+}
+
+
+/* Keyboard navigation */
+
+.project-grid-section .grid-container .project-link:focus-visible {
+
+    outline: 3px solid var(--link-color);
+    outline-offset: 4px;
+
+    border-radius: 8px;
+}
+
+
+/* ---------------------------------------------------------
+   5. TABLET AND MOBILE IMPROVEMENTS
+   --------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+
+    .hero-section .text .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-section .headshot {
+        justify-content: center;
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 0 8px;
+        margin: 25px 0;
+    }
+
+    .hero-section .group {
+        gap: 22px;
+    }
+
+    .hero-section .headshot img {
+        width: min(70vw, 280px);
+    }
+
+    .hero-section .text .hero-actions {
+        justify-content: center;
+        gap: 9px;
+    }
+
+    .hero-section .text .hero-actions a {
+        font-size: 13px;
+        padding: 9px 11px;
+    }
+
+    .about-section {
+        margin: 30px auto 65px;
+        padding: 23px 20px;
+    }
+
+    .about-section h2 {
+        font-size: 26px;
+    }
+
+    .about-section p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .project-grid-section .grid-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .project-grid-section .grid-container .project-link .project-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   6. ACCESSIBILITY — REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .hero-section .headshot img.portrait-fade-in {
+        animation: none;
+    }
+
+    .hero-section .text .hero-actions a,
+    .project-grid-section .grid-container .project-link .project-card,
+    .project-grid-section .grid-container .project-link .project-card img {
+        transition: none;
+    }
+
+    .hero-section .text .hero-actions a:hover,
+    .project-grid-section .grid-container .project-link:hover .project-card,
+    .project-grid-section .grid-container .project-link:hover .project-card img {
+        transform: none;
+    }
+
+}
