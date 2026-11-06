@@ -1,95 +1,276 @@
-
 <!-- SECTION 1: Hero -->
 <section class="hero-section">
+
     <div class="group">
+
+        <!-- INTRODUCTION -->
         <div class="text">
+
             <h2>
-                {{ site.tagline }} 
+                {{ site.tagline }}
+
                 {% if site.external-links %}
                 <span class="external-links">
+
                     {% assign platforms = "linkedin,x-twitter,github,stackoverflow,discord,medium,threads,bluesky,instagram,youtube" | split: "," %}
+
                     {% for platform in platforms %}
+
                         {% if site.external-links[platform] %}
+
                             {% case platform %}
+
                             {% when 'linkedin' %}
-                            <a href="https://www.linkedin.com/in/{{ site.external-links[platform] }}/" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        
+                                <a href="https://www.linkedin.com/in/{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+
                             {% when 'github' %}
-                                <a href="https://github.com/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://github.com/{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="GitHub">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                            
+
                             {% when 'stackoverflow' %}
-                                <a href="https://stackoverflow.com/users/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://stackoverflow.com/users/{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Stack Overflow">
                                     <i class="fa-brands fa-stack-overflow"></i>
                                 </a>
-                            
+
                             {% when 'discord' %}
-                                <a href="https://discord.com/users/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://discord.com/users/{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Discord">
                                     <i class="fa-brands fa-discord"></i>
                                 </a>
-                            
+
                             {% when 'medium' %}
-                                <a href="https://medium.com/@{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://medium.com/@{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Medium">
                                     <i class="fa-brands fa-medium"></i>
                                 </a>
-                            
+
                             {% when 'x-twitter' %}
-                                <a href="https://x.com/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://x.com/{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="X">
                                     <i class="fa-brands fa-x-twitter"></i>
                                 </a>
-                            
+
                             {% when 'threads' %}
-                                <a href="https://threads.net/@{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://threads.net/@{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Threads">
                                     <i class="fa-brands fa-threads"></i>
                                 </a>
-                            
+
                             {% when 'bluesky' %}
-                                <a href="https://bsky.app/profile/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://bsky.app/profile/{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Bluesky">
                                     <i class="fa-solid fa-cloud"></i>
                                 </a>
-                            
+
                             {% when 'instagram' %}
-                                <a href="https://instagram.com/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://instagram.com/{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Instagram">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
-                            
+
                             {% when 'youtube' %}
-                                <a href="https://youtube.com/@{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://youtube.com/@{{ site.external-links[platform] }}/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="YouTube">
                                     <i class="fa-brands fa-youtube"></i>
                                 </a>
 
                             {% endcase %}
+
                         {% endif %}
+
                     {% endfor %}
+
                 </span>
                 {% endif %}
+
             </h2>
-            
-            <h3> {{site.headline}} </h3>
-            <p> {{site.description}}</p>
-            <div class="links">
+
+            <h3>{{ site.headline }}</h3>
+
+            <p>{{ site.description }}</p>
+
+            <!-- FOUR HOMEPAGE BUTTONS -->
+            <div class="links hero-actions">
+
+                <!-- 1. PROJECTS -->
                 <a href="#projects">
-                    <i class="fa-solid fa-pen"></i>
-                    <span>Projects</span>
+                    <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+                    <span>View My Projects</span>
                 </a>
-                <a href="#skills">
-                    <i class="fa-solid fa-hammer"></i>
-                    <span>Skills</span>
+
+                <!-- 2. ABOUT ME -->
+                <a href="#about">
+                    <i class="fa-solid fa-user" aria-hidden="true"></i>
+                    <span>About Me</span>
                 </a>
+
+                <!-- 3. RESUME -->
+                <a href="{{ site['resume-url'] }}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                    <span>Download Résumé</span>
+                </a>
+
+                <!-- 4. CONTACT -->
                 <a href="#contact">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                     <span>Contact Me</span>
                 </a>
+
             </div>
-            
+
         </div>
+
+        <!-- ROTATING PROFESSIONAL PORTRAIT -->
         <div class="headshot">
-            <img src= {{site.profile_image}} alt="john doe headshot">       
+
+            <img
+                id="portfolio-headshot"
+                src="{{ site.profile_image | prepend: '/' | relative_url }}"
+                alt="Professional portrait of Spencer Holmes"
+                width="400"
+                height="400"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high">
+
         </div>
+
     </div>
-    
+
 </section>
 
+<!-- ROTATING HEADSHOT SCRIPT -->
+<script>
+(function () {
+    "use strict";
+
+    const portraits = [
+        "{{ '/assets/images/profile/spencer-professional-charcoal.jpg' | relative_url }}",
+        "{{ '/assets/images/profile/spencer-professional-navy.jpg' | relative_url }}",
+        "{{ '/assets/images/profile/spencer-professional-grey.jpg' | relative_url }}",
+        "{{ '/assets/images/profile/spencer-professional-formal.jpg' | relative_url }}",
+        "{{ '/assets/images/profile/spencer-professional-casual.jpg' | relative_url }}"
+    ];
+
+    const portraitElement = document.getElementById("portfolio-headshot");
+
+    if (!portraitElement || portraits.length === 0) {
+        return;
+    }
+
+    let selectedIndex = -1;
+
+    try {
+        // Keep the same portrait throughout this browsing session.
+        const savedIndex = sessionStorage.getItem("portfolioPortraitIndex");
+
+        if (
+            savedIndex !== null &&
+            Number.isInteger(Number(savedIndex)) &&
+            Number(savedIndex) >= 0 &&
+            Number(savedIndex) < portraits.length
+        ) {
+            selectedIndex = Number(savedIndex);
+        } else {
+
+            // Avoid repeating the previous session's portrait.
+            const previousValue = localStorage.getItem("previousPortfolioPortrait");
+            const previousIndex = previousValue === null
+                ? -1
+                : Number(previousValue);
+
+            const availableIndices = portraits
+                .map(function (_, index) {
+                    return index;
+                })
+                .filter(function (index) {
+                    return index !== previousIndex;
+                });
+
+            selectedIndex = availableIndices[
+                Math.floor(Math.random() * availableIndices.length)
+            ];
+
+            sessionStorage.setItem(
+                "portfolioPortraitIndex",
+                String(selectedIndex)
+            );
+
+            localStorage.setItem(
+                "previousPortfolioPortrait",
+                String(selectedIndex)
+            );
+        }
+
+    } catch (error) {
+
+        // Storage may be unavailable in private browsing.
+        // The portrait rotation will still work.
+        selectedIndex = Math.floor(Math.random() * portraits.length);
+
+    }
+
+    const selectedPortrait = portraits[selectedIndex];
+
+    // Preload the selected photograph before displaying it.
+    const imageLoader = new Image();
+
+    imageLoader.onload = function () {
+
+        portraitElement.src = selectedPortrait;
+
+        const reducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+        if (!reducedMotion) {
+            portraitElement.classList.add("portrait-fade-in");
+
+            portraitElement.addEventListener(
+                "animationend",
+                function () {
+                    portraitElement.classList.remove("portrait-fade-in");
+                },
+                { once: true }
+            );
+        }
+    };
+
+    // If an uploaded photograph is missing, the original
+    // site profile image remains visible.
+    imageLoader.onerror = function () {
+        console.warn("Portfolio portrait could not be loaded.");
+    };
+
+    imageLoader.src = selectedPortrait;
+
+})();
+</script>
