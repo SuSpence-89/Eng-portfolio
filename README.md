@@ -119,5 +119,6 @@ Explore the complete collection of projects and technical case studies:
 ---
 
 *This repository contains publicly shareable professional portfolio
+<!-- Trigger GitHub Pages deployment -->
 material. Military service records, restricted technical information,
 and confidential documentation are not published.*
