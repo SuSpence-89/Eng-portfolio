@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 permalink: /projects/sub-250g-drone/
@@ -148,4 +147,3 @@ As the project progresses, this page can later be expanded with additional image
 - Slicer-based manufacturability review
 - Prototype planning and iteration
 - Translating visual concepts into printable parts
-```
