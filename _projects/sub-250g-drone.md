@@ -3,7 +3,7 @@ layout: post
 permalink: /projects/sub-250g-drone/
 title: "Sub-250 g Drone Chassis — Concept Selection, CAD & 3D Printing"
 description: "Designed a lightweight drone chassis through concept screening, CAD development, and slicer-based print preparation, with emphasis on symmetry, printability, and protected propeller geometry."
-main-image: /assets/images/3d-printing/sub-250g-drone/drone-concept-selection.png
+main-image: /assets/images/3d-printing/sub-250g-drone/drone-concept-selection.png.png
 cover_position: center center
 cover_alt: "Concept comparison sheet showing multiple symmetry-driven drone chassis layouts."
 cover_caption: "Early concept selection comparing multiple symmetry-driven drone chassis layouts."
@@ -64,7 +64,7 @@ The concepts shown below illustrate the type of comparison I carried out early i
 This stage helped me evaluate the trade-offs between rotor arrangement, central hub complexity, and the relationship between the motor hoops and the connecting structural members.
 
 <figure>
-  <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-concept-selection.png' | relative_url }}" alt="Concept sheet comparing multiple drone chassis layouts including quad, hex, and hybrid rosette configurations." loading="lazy">
+ <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-concept-selection.png.png' | relative_url }}" alt="Concept sheet comparing multiple drone chassis layouts including quad, hex, and hybrid rosette configurations." loading="lazy">
   <figcaption>Concept selection stage: comparing multiple symmetry-driven chassis layouts before proceeding to detailed CAD modelling.</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ After selecting a preferred concept, I developed the chassis in CAD. This phase 
 The CAD stage was where the concept became a workable prototype. This allowed me to assess the overall form, inspect clearances, and refine how the outer hoops connected back into the central hub.
 
 <figure>
-  <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-cad-development.png' | relative_url }}" alt="CAD model of a quad drone chassis with circular propeller hoops and a central structural hub." loading="lazy">
+  <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-cad-development.png.png' | relative_url }}" alt="CAD model of a quad drone chassis with circular propeller hoops and a central structural hub." loading="lazy">
   <figcaption>CAD development of the selected drone chassis concept, showing the central hub, connecting arms, and integrated propeller hoops.</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ Using slicer software, I reviewed:
 The slicing preview confirmed that the chassis could be produced as a single printed part and provided useful feedback on the practicality of the selected geometry.
 
 <figure>
-  <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-slicing-preview.png' | relative_url }}" alt="Slicer preview of a drone chassis laid flat on a print bed, showing estimated print path and support generation." loading="lazy">
+ <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-slicing-preview.png.png' | relative_url }}" alt="Slicer preview of a drone chassis laid flat on a print bed, showing estimated print path and support generation." loading="lazy">
   <figcaption>Slicing and print-preparation stage, used to verify printability, support strategy, and expected manufacturing time.</figcaption>
 </figure>
 
