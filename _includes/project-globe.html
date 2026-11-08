@@ -1,0 +1,578 @@
+<!-- =====================================================
+     ENGINEERING IN MOTION — INTERACTIVE PROJECT GLOBE
+     ===================================================== -->
+
+<section class="engineering-globe-section" aria-labelledby="globe-title">
+
+  <div class="globe-heading">
+    <h2 id="globe-title">Engineering in Motion</h2>
+
+    <p>
+      A visual exploration of my work in mechanical design,
+      fabrication, renewable energy, aviation, and
+      technical innovation.
+    </p>
+  </div>
+
+  <div class="globe-container">
+
+    <div
+      id="engineering-globe"
+      class="engineering-globe"
+      aria-label="Interactive globe of engineering project photographs"
+    >
+
+      <div class="globe-viewport">
+
+        <div class="globe-sphere" id="globe-sphere">
+
+          <!-- DRONE PROJECT -->
+
+          <a class="globe-image"
+             href="{{ '/projects/sub-250g-drone/' | relative_url }}"
+             aria-label="Explore drone chassis project"
+             title="Drone Chassis — Concept Selection">
+            <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-concept-selection.png' | relative_url }}"
+                 alt="Drone chassis concept comparison">
+          </a>
+
+          <a class="globe-image"
+             href="{{ '/projects/sub-250g-drone/' | relative_url }}"
+             aria-label="Explore drone CAD development"
+             title="Drone Chassis — CAD Development">
+            <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-cad-development.png' | relative_url }}"
+                 alt="Drone chassis CAD model">
+          </a>
+
+          <a class="globe-image"
+             href="{{ '/projects/sub-250g-drone/' | relative_url }}"
+             aria-label="Explore drone print preparation"
+             title="Drone Chassis — Print Preparation">
+            <img src="{{ '/assets/images/3d-printing/sub-250g-drone/drone-slicing-preview.png' | relative_url }}"
+                 alt="Drone chassis slicing preview">
+          </a>
+
+          <!-- CPAP CHASSIS PROJECT -->
+
+          <a class="globe-image"
+             href="{{ '/projects/cpap-mask-chassis/' | relative_url }}"
+             aria-label="Explore CPAP chassis project"
+             title="CPAP Mask Chassis">
+            <img src="{{ '/assets/images/cpap-mask-chassis/cpap-chassis-original-front.jpg' | relative_url }}"
+                 alt="Original CPAP mask chassis">
+          </a>
+
+          <a class="globe-image"
+             href="{{ '/projects/cpap-mask-chassis/' | relative_url }}"
+             aria-label="Explore CPAP chassis CAD work"
+             title="CPAP Chassis — CAD Development">
+            <img src="{{ '/assets/images/cpap-mask-chassis/cpap-chassis-initial-cad.png' | relative_url }}"
+                 alt="CPAP chassis CAD model">
+          </a>
+
+          <a class="globe-image"
+             href="{{ '/projects/cpap-mask-chassis/' | relative_url }}"
+             aria-label="Explore CPAP chassis dimensional analysis"
+             title="CPAP Chassis — Dimensional Analysis">
+            <img src="{{ '/assets/images/cpap-mask-chassis/cpap-chassis-dimensioned-sketch.png' | relative_url }}"
+                 alt="CPAP chassis dimensioned engineering sketch">
+          </a>
+
+          <!-- MODULAR HOME BAR -->
+
+          <a class="globe-image"
+             href="{{ '/projects/custom-modular-home-bar/' | relative_url }}"
+             aria-label="Explore modular home bar project"
+             title="Reclaimed-Wood Modular Home Bar">
+            <img src="{{ '/assets/images/modular-home-bar/home-bar-mirrored-finished-hero.jpg' | relative_url }}"
+                 alt="Finished modular home bar">
+          </a>
+
+          <a class="globe-image"
+             href="{{ '/projects/custom-modular-home-bar/' | relative_url }}"
+             aria-label="Explore modular home bar construction"
+             title="Modular Home Bar — Construction">
+            <img src="{{ '/assets/images/modular-home-bar/home-bar-frame.jpg' | relative_url }}"
+                 alt="Modular home bar frame during construction">
+          </a>
+
+          <!-- LASER MARKING -->
+
+          <a class="globe-image"
+             href="{{ '/projects/industrial-laser-marking/' | relative_url }}"
+             aria-label="Explore industrial laser marking"
+             title="Laser Marking — Polished Brass">
+            <img src="{{ '/assets/images/laser-marking/curved-brass-knight.jpg' | relative_url }}"
+                 alt="Multicolour laser marking on curved brass">
+          </a>
+
+          <a class="globe-image"
+             href="{{ '/projects/industrial-laser-marking/' | relative_url }}"
+             aria-label="Explore engraved metal components"
+             title="Laser Marking — Metal Components">
+            <img src="{{ '/assets/images/laser-marking/engraved-metal-key-tags-character.jpg' | relative_url }}"
+                 alt="Laser-engraved metal tags">
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="globe-shadow" aria-hidden="true"></div>
+
+    </div>
+
+  </div>
+
+  <p class="globe-instructions">
+    Drag to Rotate &nbsp;•&nbsp; Select a Project to Explore
+  </p>
+
+</section>
+
+
+<style>
+
+/* =====================================================
+   PROJECT GLOBE — SELF-CONTAINED STYLING
+   ===================================================== */
+
+.engineering-globe-section {
+  max-width: 1100px;
+  margin: 35px auto 65px;
+  padding: 25px 20px 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.globe-heading h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1a1c20;
+  margin-bottom: 12px;
+}
+
+.globe-heading p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.globe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.engineering-globe {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  max-width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.engineering-globe:active {
+  cursor: grabbing;
+}
+
+.globe-viewport {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  perspective: 850px;
+}
+
+.globe-sphere {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.globe-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 84px;
+  height: 65px;
+
+  display: block;
+  overflow: hidden;
+
+  border-radius: 7px;
+  border: 2px solid rgba(255,255,255,0.92);
+
+  background: #f3f5fb;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+  text-decoration: none;
+  will-change: transform, opacity;
+}
+
+.globe-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.globe-image:hover {
+  border-color: #4a76ee;
+  box-shadow: 0 6px 18px rgba(74,118,238,0.28);
+}
+
+.globe-image:focus-visible {
+  outline: 3px solid #4a76ee;
+  outline-offset: 3px;
+}
+
+.globe-shadow {
+  position: absolute;
+
+  bottom: 2px;
+  left: 50%;
+
+  width: 210px;
+  height: 25px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: rgba(0,0,0,0.12);
+
+  filter: blur(15px);
+
+  pointer-events: none;
+}
+
+.globe-instructions {
+  font-size: 13px;
+  color: #777;
+  margin-top: -4px;
+  letter-spacing: 0.3px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .engineering-globe-section {
+    padding: 20px 8px;
+    margin: 20px auto 35px;
+  }
+
+  .globe-heading h2 {
+    font-size: 25px;
+  }
+
+  .globe-heading p {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  .engineering-globe {
+    width: 310px;
+    height: 310px;
+  }
+
+  .globe-image {
+    width: 62px;
+    height: 48px;
+  }
+
+  .globe-shadow {
+    width: 155px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .engineering-globe {
+    cursor: default;
+  }
+}
+
+</style>
+
+
+<script>
+(function () {
+  "use strict";
+
+  function initializeProjectGlobe() {
+
+    const globe = document.getElementById("engineering-globe");
+
+    if (!globe) return;
+
+    const images = Array.from(
+      globe.querySelectorAll(".globe-image")
+    );
+
+    if (!images.length) return;
+
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    let rotationY = 0;
+    let rotationX = 0.16;
+
+    let dragging = false;
+    let activePointer = null;
+
+    let lastX = 0;
+    let lastY = 0;
+
+    let movedDuringDrag = false;
+    let suppressNextClick = false;
+
+    let paused = false;
+    let previousTime = null;
+
+    const count = images.length;
+
+    /*
+     * Fibonacci sphere distribution:
+     * Places photographs around an invisible sphere,
+     * leaving open space between individual images.
+     */
+
+    const points = images.map(function (_, index) {
+
+      const y = 1 - (index / (count - 1)) * 2;
+
+      const horizontalRadius = Math.sqrt(
+        Math.max(0, 1 - y * y)
+      );
+
+      const theta = Math.PI * (3 - Math.sqrt(5)) * index;
+
+      return {
+        x: Math.cos(theta) * horizontalRadius,
+        y: y,
+        z: Math.sin(theta) * horizontalRadius
+      };
+
+    });
+
+    function renderGlobe() {
+
+      const mobile = globe.clientWidth < 380;
+
+      const radius = mobile ? 115 : 166;
+
+      const cosineY = Math.cos(rotationY);
+      const sineY = Math.sin(rotationY);
+
+      const cosineX = Math.cos(rotationX);
+      const sineX = Math.sin(rotationX);
+
+      images.forEach(function (image, index) {
+
+        const point = points[index];
+
+        // Rotate around vertical axis.
+
+        const x1 =
+          point.x * cosineY +
+          point.z * sineY;
+
+        const z1 =
+          -point.x * sineY +
+          point.z * cosineY;
+
+        // Rotate around horizontal axis.
+
+        const y2 =
+          point.y * cosineX -
+          z1 * sineX;
+
+        const z2 =
+          point.y * sineX +
+          z1 * cosineX;
+
+        // Simulate depth and perspective.
+
+        const depth = (z2 + 1) / 2;
+
+        const scale = 0.65 + depth * 0.50;
+
+        const x = x1 * radius;
+        const y = y2 * radius;
+
+        image.style.transform =
+          "translate(-50%, -50%) " +
+          "translate3d(" + x + "px," + y + "px,0) " +
+          "scale(" + scale + ")";
+
+        image.style.opacity = String(
+          0.18 + depth * 0.82
+        );
+
+        image.style.zIndex = String(
+          Math.round(depth * 100)
+        );
+
+        // Rear photographs are visible but not clickable.
+
+        const onFront = z2 > -0.05;
+
+        image.style.pointerEvents =
+          onFront ? "auto" : "none";
+
+        image.tabIndex = onFront ? 0 : -1;
+
+      });
+    }
+
+    function animate(time) {
+
+      if (previousTime === null) {
+        previousTime = time;
+      }
+
+      const delta = Math.min(time - previousTime, 60);
+
+      previousTime = time;
+
+      if (!paused && !dragging && !reducedMotion) {
+
+        // Approximately one rotation every 70 seconds.
+
+        rotationY +=
+          (delta / 70000) * Math.PI * 2;
+
+        renderGlobe();
+
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    globe.addEventListener("pointerdown", function (event) {
+
+      if (reducedMotion) return;
+
+      if (event.button !== 0) return;
+
+      dragging = true;
+      activePointer = event.pointerId;
+
+      lastX = event.clientX;
+      lastY = event.clientY;
+
+      movedDuringDrag = false;
+
+    });
+
+    window.addEventListener("pointermove", function (event) {
+
+      if (!dragging || event.pointerId !== activePointer) {
+        return;
+      }
+
+      const dx = event.clientX - lastX;
+      const dy = event.clientY - lastY;
+
+      if (Math.abs(dx) + Math.abs(dy) > 2) {
+        movedDuringDrag = true;
+      }
+
+      rotationY += dx * 0.008;
+      rotationX += dy * 0.005;
+
+      rotationX = Math.max(
+        -0.9,
+        Math.min(0.9, rotationX)
+      );
+
+      lastX = event.clientX;
+      lastY = event.clientY;
+
+      renderGlobe();
+
+    });
+
+    function endDrag(event) {
+
+      if (!dragging || event.pointerId !== activePointer) {
+        return;
+      }
+
+      dragging = false;
+      activePointer = null;
+
+      if (movedDuringDrag) {
+        suppressNextClick = true;
+      }
+    }
+
+    window.addEventListener("pointerup", endDrag);
+
+    window.addEventListener("pointercancel", endDrag);
+
+    globe.addEventListener("click", function (event) {
+
+      if (suppressNextClick) {
+        event.preventDefault();
+        suppressNextClick = false;
+      }
+
+    }, true);
+
+    globe.addEventListener("mouseenter", function () {
+      paused = true;
+    });
+
+    globe.addEventListener("mouseleave", function () {
+      paused = false;
+    });
+
+    globe.addEventListener("focusin", function () {
+      paused = true;
+    });
+
+    globe.addEventListener("focusout", function (event) {
+      if (!globe.contains(event.relatedTarget)) {
+        paused = false;
+      }
+    });
+
+    window.addEventListener("resize", renderGlobe);
+
+    // Avoid animating while the page is hidden.
+    document.addEventListener("visibilitychange", function () {
+      previousTime = null;
+    });
+
+    renderGlobe();
+
+    if (!reducedMotion) {
+      requestAnimationFrame(animate);
+    }
+
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener(
+      "DOMContentLoaded",
+      initializeProjectGlobe
+    );
+  } else {
+    initializeProjectGlobe();
+  }
+
+})();
+</script>
