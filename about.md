@@ -1,11 +1,10 @@
-```markdown
 ---
 layout: wrapper
 permalink: /about/
 title: "About Me — Spencer Holmes"
 ---
 
-<div class="about-section" style="margin-top: 45px;">
+<div class="about-section" markdown="1" style="margin-top: 45px;">
 
 # About Me
 
