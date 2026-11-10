@@ -1,3 +1,4 @@
+
 ---
 layout: wrapper
 permalink: /about/
@@ -28,9 +29,25 @@ Along the way, I've developed a wide range of interests, hobbies, and experience
 
 # My Story
 
-## Chapter 1: Growing Up on the Farm
+*A growing collection of memories, experiences, and adventures.*
 
-### An Unconventional Childhood
+I've organized my story into chapters so you can explore whichever parts interest you. Some chapters are already written, while others will be developed as I find the time to share more memories.
+
+**Click a chapter title to expand it.**
+
+<!-- CHAPTER 1 -->
+
+<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
+
+<summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
+Chapter 1: Growing Up in Rock Creek
+</summary>
+
+*An unconventional childhood, farm life, homeschooling, and discovering a love of reading.*
+
+---
+
+## An Unconventional Childhood
 
 I was born in British Columbia and grew up on a **150-acre hobby farm near Rock Creek, B.C.**, about as close to the Canada–United States border as you could possibly get.
 
@@ -178,47 +195,111 @@ Those kinds of moments are what made the series memorable to me.
 
 Of all the novels I've read over the years, **Terry Goodkind's *Faith of the Fallen* remains my favourite book of all time.**
 
----
+</details>
 
-# Explore More About Me
+<!-- CHAPTER 2 -->
 
-My childhood is only one chapter of my story. There are plenty of other experiences, interests, and memories I'd like to share.
+<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
 
-The following sections will be developed as I find the time to tell those stories.
+<summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
+Chapter 2: The Long Road Through Education
+</summary>
 
-## ✈️ My Military Journey
+*From homeschooling to two post-secondary diplomas, my C.E.T. designation, and the next frontier.*
+
+My educational journey has been anything but straightforward.
+
+After an unconventional childhood education, I entered public high school, left before graduating, joined the military, and eventually returned to school while balancing work, family, and unexpected changes in my life.
+
+I earned my high school diploma in 2020 and later completed diplomas in Mechanical Engineering Technology and Sustainable Energy Technology.
+
+In October 2026, I earned my Certified Engineering Technologist designation.
+
+Somewhere along the way, what began as a necessity became a genuine thirst for knowledge.
+
+And there's still one more ambition on the horizon: someday pursuing a Bachelor of Science in Energy Engineering at the University of Calgary.
+
+**[📖 Read Chapter 2 — The Long Road Through Education →]({{ '/about/education/' | relative_url }})**
+
+</details>
+
+<!-- CHAPTER 3 -->
+
+<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
+
+<summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
+Chapter 3: My Military Journey
+</summary>
+
+*Air Cadets, the Royal Canadian Air Force, and the experiences that shaped my military career.*
 
 My experiences in Air Cadets and the Royal Canadian Air Force represent another significant chapter of my life.
 
-This section will focus on the people, places, friendships, experiences, and memories that shaped my military career.
+This chapter will focus on the people, places, friendships, experiences, and memories that shaped my military career.
 
 Rather than concentrating on technical achievements or engineering projects, I'd like to share what military life was actually like from my perspective.
 
 **Stories and photographs coming soon.**
 
----
+</details>
 
-## 🛠️ Hobbies & Interests
+<!-- CHAPTER 4 -->
 
-I've always enjoyed working with my hands, experimenting with new ideas, and finding ways to make things.
+<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
 
-Whether it's woodworking, personal projects, technology, or something entirely unrelated to engineering, I enjoy exploring whatever happens to capture my curiosity.
+<summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
+Chapter 4: Hobbies & Adventures
+</summary>
 
-This section will eventually highlight the interests and activities I enjoy outside my professional life.
+*Dancing, gaming, woodworking, sports, outdoor adventures, and a little bit of everything.*
 
-**More coming soon.**
+I've always had a wide range of interests, and depending on my mood, my idea of a perfect weekend can look very different.
 
----
+Sometimes I'm happiest playing video games, whether that's *The Sims 4* or playing *Stardew Valley* cooperatively with my son.
 
-## 💻 Technology & Tinkering
+Other times, I'd rather be working with my hands, building something out of wood, or getting outside.
 
-Computers, electronics, software, and emerging technologies have always interested me.
+### From Ballroom to Latin Dancing
 
-I enjoy experimenting with different tools, learning how things work, and occasionally taking on projects simply to see whether I can make an idea work.
+One of my favourite social hobbies is dancing, particularly salsa dancing with my wife.
 
-Sometimes the experimentation itself is half the fun.
+I originally started by taking formal ballroom lessons, learning Foxtrot, Waltz, Tango, and Cha Cha.
 
-**More coming soon.**
+Through those classes, I met people involved in the Latin dancing community and was invited to try it.
+
+As a young guy, I quickly decided Latin dancing looked like a whole lot more fun!
+
+I went on to learn salsa on-2, bachata, Latin Cha Cha, some kizomba, and West Coast Swing.
+
+I became completely immersed in the Latin dancing scene.
+
+One of my favourite experiences was attending the Vancouver International Salsa Festival in **2011, 2012, and 2013**.
+
+Those were some of the best times of my life.
+
+I later introduced my wife to Latin dancing, and it's something we've been able to enjoy together.
+
+### Outdoor Adventures & Other Interests
+
+Over the years, I've also enjoyed:
+
+- Sea kayaking and surfing
+- Hiking and geocaching
+- Hunting wild game, particularly deer and moose
+- Muay Thai kickboxing
+- Refereeing roller derby
+- Long-distance running
+- Woodworking and other creative projects
+
+Some of these hobbies aren't as easy to pursue these days because of time, money, or geography, but I'd happily return to many of them if the opportunity presented itself.
+
+I suppose I've never been particularly good at limiting myself to just one or two interests.
+
+**I enjoy variety, and I don't see that changing anytime soon.**
+
+*More stories and photo galleries will be added to this chapter.*
+
+</details>
 
 ---
 
