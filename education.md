@@ -1,4 +1,3 @@
-
 ---
 layout: wrapper
 permalink: /about/education/
