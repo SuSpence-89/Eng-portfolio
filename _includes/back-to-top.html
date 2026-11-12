@@ -1,0 +1,246 @@
+
+<!-- ==========================================
+     PREMIUM FLOATING BACK-TO-TOP BUTTON
+     ========================================== -->
+
+<button
+  id="back-to-top"
+  type="button"
+  aria-label="Back to top"
+  title="Back to top"
+  tabindex="-1"
+>
+
+  <!-- Double-chevron icon -->
+  <svg
+    viewBox="0 0 24 24"
+    width="30"
+    height="30"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="m6 12 6-6 6 6" />
+    <path d="m6 19 6-6 6 6" />
+  </svg>
+
+  <span class="back-to-top-label">TOP</span>
+
+</button>
+
+<style>
+
+/* ==========================================
+   PREMIUM 3D FLOATING BUTTON
+   ========================================== */
+
+#back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 28px;
+  z-index: 1000;
+
+  box-sizing: border-box;
+  width: 64px;
+  height: 76px;
+  min-width: 0;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  background: linear-gradient(
+    155deg,
+    #79a9ff 0%,
+    #467ff2 38%,
+    #1d54c3 100%
+  );
+
+  color: #ffffff;
+  border: 1px solid #3569cc;
+  border-radius: 20px;
+
+  box-shadow:
+    0 6px 0 #174397,
+    0 13px 24px rgba(22, 64, 145, 0.28),
+    inset 0 2px 1px rgba(255,255,255,0.35);
+
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none;
+
+  /* Hide until scrolling */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(16px);
+
+  transition:
+    opacity 0.28s ease,
+    visibility 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    background 0.28s ease;
+}
+
+/* Glossy inner border */
+
+#back-to-top::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+/* Arrow styling */
+
+#back-to-top svg {
+  display: block;
+  flex-shrink: 0;
+  color: #ffffff;
+  stroke: #ffffff;
+
+  filter: drop-shadow(
+    0 2px 2px rgba(0,0,0,0.15)
+  );
+}
+
+/* Small TOP label */
+
+#back-to-top .back-to-top-label {
+  display: block;
+  color: #ffffff !important;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+/* Reveal after scrolling */
+
+#back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Hover — lift upwards */
+
+#back-to-top.is-visible:hover {
+  transform: translateY(-5px);
+
+  background: linear-gradient(
+    155deg,
+    #91baff,
+    #5088f5,
+    #225bcb
+  );
+
+  box-shadow:
+    0 10px 0 #174397,
+    0 20px 32px rgba(22,64,145,0.34),
+    inset 0 2px 1px rgba(255,255,255,0.45);
+}
+
+/* Click — pressed effect */
+
+#back-to-top.is-visible:active {
+  transform: translateY(3px);
+
+  box-shadow:
+    0 2px 0 #174397,
+    0 6px 12px rgba(22,64,145,0.20);
+}
+
+/* Keyboard navigation */
+
+#back-to-top:focus-visible {
+  outline: 3px solid #8db9ff;
+  outline-offset: 5px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  #back-to-top {
+    width: 54px;
+    height: 66px;
+    right: 15px;
+    bottom: 20px;
+    border-radius: 17px;
+  }
+
+  #back-to-top svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  #back-to-top .back-to-top-label {
+    font-size: 9px;
+  }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  #back-to-top {
+    transition: none;
+  }
+
+  #back-to-top.is-visible:hover {
+    transform: none;
+  }
+}
+
+</style>
+
+<script>
+(function () {
+  "use strict";
+
+  const button = document.getElementById(
+    "back-to-top"
+  );
+
+  if (!button) return;
+
+  function updateButton() {
+    const visible = window.scrollY > 400;
+
+    button.classList.toggle(
+      "is-visible",
+      visible
+    );
+
+    button.tabIndex = visible ? 0 : -1;
+  }
+
+  button.addEventListener("click", function () {
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    window.scrollTo({
+      top: 0,
+      behavior: reducedMotion ? "auto" : "smooth"
+    });
+  });
+
+  window.addEventListener(
+    "scroll",
+    updateButton,
+    { passive: true }
+  );
+
+  updateButton();
+})();
+</script>
