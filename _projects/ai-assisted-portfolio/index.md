@@ -12,7 +12,7 @@ skills:
   - GitHub Pages & Jekyll
   - AI-Assisted Development
   - Testing & Troubleshooting
-main-image: /website-cover.jpg
+main-image: /assets/images/ai-assisted-portfolio/website-cover.jpg
 ---
 
 **Personal Project | Ongoing | AI-assisted website development**
