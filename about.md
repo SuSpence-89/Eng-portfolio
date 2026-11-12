@@ -99,7 +99,7 @@ I've organized my story into chapters so you can explore whichever parts interes
 
 <!-- CHAPTER 1 -->
 
-<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
+<details class="story-chapter" markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
 
 <summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
 Chapter 1: Growing Up in Rock Creek
@@ -283,7 +283,7 @@ Of all the novels I've read over the years, **Terry Goodkind's *Faith of the Fal
 
 <!-- CHAPTER 2 -->
 
-<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
+<details class="story-chapter" markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
 
 <summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
 Chapter 2: The Long Road Through Education
@@ -309,7 +309,7 @@ And there's still one more ambition on the horizon: someday pursuing a Bachelor 
 
 <!-- CHAPTER 3 -->
 
-<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
+<details class="story-chapter" markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
 
 <summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
 Chapter 3: My Military Journey
@@ -329,7 +329,7 @@ Rather than concentrating on technical achievements or engineering projects, I'd
 
 <!-- CHAPTER 4 -->
 
-<details style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
+<details class="story-chapter" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
 
 <summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
 Chapter 4: Hobbies &amp; Adventures
