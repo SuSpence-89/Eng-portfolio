@@ -309,81 +309,156 @@ Rather than concentrating on technical achievements or engineering projects, I'd
 
 </details>
 
+
 <!-- CHAPTER 4 -->
 
-<details markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
+<details style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
 
 <summary style="cursor:pointer;font-size:1.25rem;font-weight:700;color:#1675d1;padding:8px 0;">
-Chapter 4: Hobbies & Adventures
+Chapter 4: Hobbies &amp; Adventures
 </summary>
 
-*Dancing, gaming, woodworking, sports, outdoor adventures, and a little bit of everything.*
+<p><em>Dancing, gaming, woodworking, sports, outdoor adventures, and a little bit of everything.</em></p>
 
-I've always had a wide range of interests, and depending on my mood, my idea of a perfect weekend can look very different.
+<p>I've always had a wide range of interests, and depending on my mood, my idea of a perfect weekend can look very different.</p>
 
-Sometimes I'm happiest playing video games, whether that's *The Sims 4* or playing *Stardew Valley* cooperatively with my son.
+<h3>Gaming &amp; Woodworking</h3>
 
-Other times, I'd rather be working with my hands, building something out of wood, or getting outside.
+<p>Sometimes I'm happiest playing video games, whether that's <em>The Sims 4</em> or playing <em>Stardew Valley</em> cooperatively with my son.</p>
 
-### From Ballroom to Latin Dancing
+<p>Other times, I'd rather be working with my hands, building something out of wood, or getting outside.</p>
 
-One of my favourite social hobbies is dancing, particularly salsa dancing with my wife.
+<h3>From Ballroom to Latin Dancing</h3>
 
-I originally started by taking formal ballroom lessons, learning Foxtrot, Waltz, Tango, and Cha Cha.
+<p>One of my favourite social hobbies is dancing, particularly salsa dancing with my wife.</p>
 
-Through those classes, I met people involved in the Latin dancing community and was invited to try it.
+<p>I originally started by taking formal ballroom lessons, learning Foxtrot, Waltz, Tango, and Cha Cha. Through those classes, I met people involved in the Latin dancing community and was invited to try it.</p>
 
-As a young guy, I quickly decided Latin dancing looked like a whole lot more fun!
+<p>As a young guy, I quickly decided Latin dancing looked like a whole lot more fun!</p>
 
-I went on to learn salsa on-2, bachata, Latin Cha Cha, some kizomba, and West Coast Swing.
+<p>I went on to learn salsa on-2, bachata, Latin Cha Cha, some kizomba, and West Coast Swing. I became completely immersed in the Latin dancing scene.</p>
 
-I became completely immersed in the Latin dancing scene.
+<!-- FEATURE PHOTO: SALSA -->
 
-One of my favourite experiences was attending the Vancouver International Salsa Festival in **2011, 2012, and 2013**.
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin:26px 0;">
 
-Those were some of the best times of my life.
+  <div style="flex:1 1 280px;min-width:0;">
 
-I later introduced my wife to Latin dancing, and it's something we've been able to enjoy together.
+    <p>One of my favourite experiences was attending the <strong>Vancouver International Salsa Festival in 2011, 2012, and 2013</strong>.</p>
 
-{% include about-photo-gallery.html folder="dance-photos" title="Salsa Dancing & Festival Memories" %}
+    <p>Those were some of the best times of my life. I later introduced my wife to Latin dancing, and it's something we've been able to enjoy together.</p>
 
-### Outdoor Adventures & Other Interests
+  </div>
 
-Over the years, I've also enjoyed:
+  <figure style="flex:0 1 350px;width:100%;max-width:350px;margin:0 auto;background:white;padding:9px;border:1px solid #dbe3f0;border-radius:16px;box-shadow:0 12px 28px rgba(24,48,82,.18);">
 
-- Sea kayaking and surfing
-- Hiking and geocaching
-- Hunting wild game, particularly deer and moose
-- Muay Thai kickboxing
-- Refereeing roller derby
-- Long-distance running
-- Woodworking and other creative projects
+    <a href="{{ '/assets/images/dance-photos/salsa-festival-2011-performers-group.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
 
-Some of these hobbies aren't as easy to pursue these days because of time, money, or geography, but I'd happily return to many of them if the opportunity presented itself.
+      <img
+        src="{{ '/assets/images/dance-photos/salsa-festival-2011-performers-group.jpg' | relative_url }}"
+        alt="A group photograph at the 2011 salsa festival"
+        loading="lazy"
+        style="width:100%;height:auto;display:block;border-radius:10px;"
+      >
 
-I suppose I've never been particularly good at limiting myself to just one or two interests.
+    </a>
 
-**I enjoy variety, and I don't see that changing anytime soon.**
+    <figcaption style="font-size:.88rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">
+      A memory from the 2011 salsa festival. Click to enlarge.
+    </figcaption>
 
-### More Adventures in Pictures
+  </figure>
 
-I've collected additional photographs from some of the hobbies and adventures I've enjoyed over the years. Each album is optional to open, so you can browse without interrupting the story.
+</div>
 
-{% include about-photo-gallery.html folder="sea-kayaking-adventures" title="Sea Kayaking Adventures" %}
+{% include about-photo-gallery.html folder="dance-photos" title="More Salsa Dancing & Festival Photos" %}
+
+<h3>Sea Kayaking, Surfing &amp; Exploring</h3>
+
+<p>I've enjoyed sea kayaking, surfing in Tofino, hiking, and geocaching. These were opportunities to get outside, explore different places, and enjoy a change of pace.</p>
+
+<!-- FEATURE PHOTO: KAYAKING -->
+
+<figure style="max-width:760px;margin:24px auto;background:white;padding:10px;border:1px solid #dbe3f0;border-radius:17px;box-shadow:0 12px 28px rgba(24,48,82,.16);">
+
+  <a href="{{ '/assets/images/sea-kayaking-adventures/kayakers-paddling-at-sunset.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
+
+    <img
+      src="{{ '/assets/images/sea-kayaking-adventures/kayakers-paddling-at-sunset.jpg' | relative_url }}"
+      alt="A group of sea kayakers paddling across calm water at sunset"
+      loading="lazy"
+      style="display:block;width:100%;height:auto;border-radius:10px;"
+    >
+
+  </a>
+
+  <figcaption style="font-size:.88rem;color:#526278;padding:11px 6px 4px;line-height:1.45;">
+    Sea kayaking at sunset — one of my outdoor adventures. Click to enlarge.
+  </figcaption>
+
+</figure>
+
+{% include about-photo-gallery.html folder="sea-kayaking-adventures" title="More Sea Kayaking Photos" %}
 
 {% include about-photo-gallery.html folder="tofino-surfing" title="Surfing in Tofino" %}
 
 {% include about-photo-gallery.html folder="hiking-and-geocaching" title="Hiking & Geocaching" %}
 
-{% include about-photo-gallery.html folder="kickboxing-mma" title="Kickboxing & Martial Arts" %}
+<h3>Muay Thai &amp; Roller Derby</h3>
 
-{% include about-photo-gallery.html folder="roller-derby-referee" title="Roller Derby Refereeing" %}
+<p>I've also enjoyed Muay Thai kickboxing and refereeing roller derby. Both brought different challenges and experiences that I still appreciate looking back on.</p>
+
+<!-- FEATURE PHOTO: ROLLER DERBY -->
+
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin:26px 0;">
+
+  <figure style="flex:0 1 350px;width:100%;max-width:350px;margin:0 auto;background:white;padding:9px;border:1px solid #dbe3f0;border-radius:16px;box-shadow:0 12px 28px rgba(24,48,82,.18);">
+
+    <a href="{{ '/assets/images/roller-derby-referee/roller-derby-referee-on-track.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
+
+      <img
+        src="{{ '/assets/images/roller-derby-referee/roller-derby-referee-on-track.jpg' | relative_url }}"
+        alt="A roller derby referee on the track during an event"
+        loading="lazy"
+        style="width:100%;height:auto;display:block;border-radius:10px;"
+      >
+
+    </a>
+
+    <figcaption style="font-size:.88rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">
+      One of my roller derby refereeing memories. Click to enlarge.
+    </figcaption>
+
+  </figure>
+
+  <div style="flex:1 1 280px;min-width:0;">
+
+    <p>Roller derby refereeing was certainly one of the more unusual activities I've taken part in. It was a very different experience from the other hobbies I enjoyed.</p>
+
+    <p>I've also spent time training in Muay Thai, another activity I'd gladly return to if the opportunity presented itself.</p>
+
+  </div>
+
+</div>
+
+{% include about-photo-gallery.html folder="kickboxing-mma" title="Kickboxing & Martial Arts Photos" %}
+
+{% include about-photo-gallery.html folder="roller-derby-referee" title="More Roller Derby Photos" %}
+
+<h3>Hunting &amp; Other Interests</h3>
+
+<p>I also enjoy hunting wild game, primarily deer and moose. Long-distance running and woodworking are among the other interests that have been part of my life.</p>
 
 {% include about-photo-gallery.html folder="hunting" title="Hunting & the Outdoors" %}
 
-*More memories and photographs may be added to these albums over time.*
+<p>Some of these hobbies aren't as easy to pursue these days because of time, money, or geography, but I'd happily return to many of them if the opportunity presented itself.</p>
+
+<p>I suppose I've never been particularly good at limiting myself to just one or two interests.</p>
+
+<p><strong>I enjoy variety, and I don't see that changing anytime soon.</strong></p>
 
 </details>
+
 
 ---
 
