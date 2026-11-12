@@ -366,8 +366,8 @@
      */
 
     const points = images.map(function (_, index) {
-
-      const y = 1 - (index / (count - 1)) * 2;
+ 
+const y = 1 - ((index + 0.5) / count) * 2;
 
       const horizontalRadius = Math.sqrt(
         Math.max(0, 1 - y * y)
