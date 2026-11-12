@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "AI-Assisted Portfolio Website & Digital Autobiography"
