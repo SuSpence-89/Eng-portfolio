@@ -2,6 +2,9 @@
 layout: post
 title: "AI-Assisted Portfolio Website & Digital Autobiography"
 description: "A personal engineering portfolio and evolving autobiography developed through AI-assisted coding, requirements planning, hands-on testing, and iterative improvements."
+show_in_portfolio: true
+portfolio_categories:
+  - programming
 skills:
   - Project Planning
   - Requirements Definition
