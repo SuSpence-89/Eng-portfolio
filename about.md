@@ -4,25 +4,88 @@ permalink: /about/
 title: "About Me — Spencer Holmes"
 ---
 
-<div class="about-section" markdown="1" style="margin-top: 45px;">
 
-# About Me
+<div class="about-section" style="margin-top:45px;">
 
-### There's More to My Story Than Engineering
+  <div style="
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:35px;
+  ">
 
-Welcome! I'm Spencer Holmes.
+    <!-- PERSONAL INTRODUCTION -->
 
-While much of this website showcases my professional experience, engineering projects, and technical interests, I wanted to create a separate space that tells a little more about who I am beyond my work.
+    <div style="flex:1 1 420px;min-width:0;">
 
-My journey has been anything but conventional.
+      <h1>About Me</h1>
 
-I grew up on a farm in British Columbia, was homeschooled, and didn't learn to read until I was 12 years old. My experiences in Air Cadets and, later, the Royal Canadian Air Force became important chapters in my life.
+      <h3>There's More to My Story Than Engineering</h3>
 
-Along the way, I've developed a wide range of interests, hobbies, and experiences that have shaped how I see the world.
+      <p>Welcome! I'm Spencer Holmes.</p>
 
-**This is where I'd like to share those stories — the person behind the projects.**
+      <p>
+        While much of this website showcases my
+        professional experience, engineering projects,
+        and technical interests, I wanted to create
+        a separate space that tells a little more
+        about who I am beyond my work.
+      </p>
+
+      <p>My journey has been anything but conventional.</p>
+
+      <p>
+        I grew up on a farm in British Columbia, was
+        homeschooled, and didn't learn to read until
+        I was 12 years old. My experiences in Air
+        Cadets and, later, the Royal Canadian Air
+        Force became important chapters in my life.
+      </p>
+
+      <p>
+        Along the way, I've developed a wide range
+        of interests, hobbies, and experiences that
+        have shaped how I see the world.
+      </p>
+
+      <p>
+        <strong>
+          This is where I'd like to share those
+          stories — the person behind the projects.
+        </strong>
+      </p>
+
+    </div>
+
+    <!-- PERSONAL PORTRAIT -->
+
+    <div style="
+      flex:0 1 275px;
+      width:100%;
+      max-width:275px;
+      margin:0 auto;
+    ">
+
+      <img
+        src="{{ '/assets/images/profile-image/spencer-about-me.jpg' | relative_url }}"
+        alt="Spencer Holmes — personal portrait"
+        loading="eager"
+        style="
+          display:block;
+          width:100%;
+          height:auto;
+          border-radius:18px;
+          box-shadow:0 12px 30px rgba(0,0,0,0.16);
+        "
+      >
+
+    </div>
+
+  </div>
 
 </div>
+
 
 ---
 
