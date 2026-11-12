@@ -1,0 +1,45 @@
+{% comment %}
+Reusable autobiography photo album.
+Example: {% include about-photo-gallery.html folder="dance-photos" title="Salsa Dancing Memories" %}
+It automatically discovers JPG, JPEG, PNG, WebP and GIF files in assets/images/<folder>/.
+{% endcomment %}
+{% assign album_dir = '/assets/images/' | append: include.folder | append: '/' %}
+{% assign album_count = 0 %}
+{% assign album_cover = '' %}
+{% for picture in site.static_files %}
+  {% assign photo_ext = picture.extname | downcase %}
+  {% if picture.path contains album_dir %}
+    {% if photo_ext == '.jpg' or photo_ext == '.jpeg' or photo_ext == '.png' or photo_ext == '.webp' or photo_ext == '.gif' %}
+      {% assign album_count = album_count | plus: 1 %}
+      {% if album_cover == '' %}{% assign album_cover = picture.path %}{% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% if album_count > 0 %}
+<details style="margin:18px 0;border:1px solid #d8e2f1;border-radius:14px;box-shadow:0 3px 12px rgba(30,68,112,.07);background:#fff;overflow:hidden;">
+  <summary style="cursor:pointer;display:flex;align-items:center;gap:16px;padding:14px 18px;color:#1769c1;">
+    <img src="{{ album_cover | relative_url }}" alt="" loading="lazy" width="100" height="72" style="width:100px;height:72px;object-fit:cover;border-radius:9px;flex-shrink:0;">
+    <span style="flex:1;min-width:0;">
+      <strong style="display:block;font-size:1.05rem;line-height:1.4;">{{ include.title | escape }}</strong>
+      <small style="display:block;margin-top:4px;color:#5e6877;">{{ album_count }} photographs · Click to explore</small>
+    </span>
+  </summary>
+  <div style="padding:4px 16px 18px;">
+    <p style="font-size:.9rem;color:#5e6877;margin:0 0 12px;">Select a photo to see it at full size in a new tab.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;">
+      {% for picture in site.static_files %}
+        {% assign photo_ext = picture.extname | downcase %}
+        {% if picture.path contains album_dir %}
+          {% if photo_ext == '.jpg' or photo_ext == '.jpeg' or photo_ext == '.png' or photo_ext == '.webp' or photo_ext == '.gif' %}
+            {% assign photo_label = picture.name | split: '.' | first | replace: '-', ' ' %}
+            <a href="{{ picture.path | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ photo_label | escape }} at full size" style="text-decoration:none;display:block;">
+              <img src="{{ picture.path | relative_url }}" alt="{{ photo_label | escape }}" loading="lazy" decoding="async" style="display:block;width:100%;aspect-ratio:4 / 3;object-fit:cover;border-radius:9px;box-shadow:0 2px 8px rgba(0,0,0,.1);">
+              <span style="display:block;font-size:.76rem;line-height:1.4;color:#566476;margin-top:5px;">{{ photo_label | capitalize | escape }}</span>
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</details>
+{% endif %}
