@@ -114,6 +114,16 @@
                  alt="Laser-engraved metal tags">
           </a>
 
+          <!-- AI-ASSISTED PORTFOLIO WEBSITE -->
+
+          <a class="globe-image"
+             href="{{ '/projects/ai-assisted-portfolio/' | relative_url }}"
+             aria-label="Explore AI-assisted portfolio website project"
+             title="AI-Assisted Portfolio Website & Digital Autobiography">
+            <img src="{{ '/assets/images/ai-assisted-portfolio/website-cover.jpg' | relative_url }}"
+                 alt="AI-assisted portfolio website cover">
+          </a>
+
         </div>
 
       </div>
@@ -224,6 +234,12 @@
   object-fit: cover;
   display: block;
   pointer-events: none;
+}
+
+/* Keep the top of the website screenshot visible */
+
+.globe-image img[src*="ai-assisted-portfolio/website-cover.jpg"] {
+  object-position: center top;
 }
 
 .globe-image:hover {
