@@ -97,6 +97,8 @@ I've organized my story into chapters so you can explore whichever parts interes
 
 **Click a chapter title to expand it.**
 
+{% include about-reading-guide.html %}
+
 <!-- CHAPTER 1 -->
 
 <details class="story-chapter" markdown="1" style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
