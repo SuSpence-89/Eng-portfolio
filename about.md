@@ -115,6 +115,15 @@ I was born in British Columbia and grew up on a **150-acre hobby farm near Rock 
 
 I come from a large family of eight children. I'm the fifth-born and the youngest of the boys, which made for an interesting childhood, to say the least.
 
+<!-- FEATURE PHOTO: FAMILY & CHILDHOOD -->
+<figure style="max-width:460px;margin:24px auto;background:#fff;padding:9px;border:1px solid #dbe3f0;border-radius:16px;box-shadow:0 12px 28px rgba(24,48,82,.16);">
+  <a href="{{ '/assets/images/growing-up-in-rockcreek/family-group-on-couch.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ '/assets/images/growing-up-in-rockcreek/family-group-on-couch.jpg' | relative_url }}" alt="A family photograph from Spencer's childhood" loading="lazy" style="display:block;width:100%;height:auto;border-radius:10px;">
+  </a>
+  <figcaption style="font-size:.86rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">A family moment from my childhood. Click to enlarge.</figcaption>
+</figure>
+
+
 Hard work and the skilled trades have always been part of my family's history. My grandfather was an ironworker, my father followed in his footsteps, and two of my brothers also entered the trade.
 
 **You could say ironworking runs in our blood.**
@@ -156,6 +165,15 @@ Looking back, I'm pretty sure all that water hauling had something to do with th
 But life wasn't all work.
 
 Once the morning chores were finished, our days were a mixture of helping Mom around the house and property and finding ways to have fun with my siblings.
+
+<!-- FEATURE PHOTO: GROWING UP OUTDOORS -->
+<figure style="max-width:680px;margin:24px auto;background:#fff;padding:9px;border:1px solid #dbe3f0;border-radius:16px;box-shadow:0 12px 28px rgba(24,48,82,.16);">
+  <a href="{{ '/assets/images/growing-up-in-rockcreek/children-outside-in-forest.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ '/assets/images/growing-up-in-rockcreek/children-outside-in-forest.jpg' | relative_url }}" alt="Children standing outdoors by trees in a childhood photograph" loading="lazy" style="display:block;width:100%;height:auto;border-radius:10px;">
+  </a>
+  <figcaption style="font-size:.86rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">A childhood memory from our time outdoors. Click to enlarge.</figcaption>
+</figure>
+
 
 With eight children growing up together on a large farm, there was certainly no shortage of company or opportunities to entertain ourselves.
 
@@ -309,7 +327,6 @@ Rather than concentrating on technical achievements or engineering projects, I'd
 
 </details>
 
-
 <!-- CHAPTER 4 -->
 
 <details style="margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:14px 18px;">
@@ -339,36 +356,17 @@ Chapter 4: Hobbies &amp; Adventures
 <p>I went on to learn salsa on-2, bachata, Latin Cha Cha, some kizomba, and West Coast Swing. I became completely immersed in the Latin dancing scene.</p>
 
 <!-- FEATURE PHOTO: SALSA -->
-
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin:26px 0;">
-
   <div style="flex:1 1 280px;min-width:0;">
-
     <p>One of my favourite experiences was attending the <strong>Vancouver International Salsa Festival in 2011, 2012, and 2013</strong>.</p>
-
     <p>Those were some of the best times of my life. I later introduced my wife to Latin dancing, and it's something we've been able to enjoy together.</p>
-
   </div>
-
   <figure style="flex:0 1 350px;width:100%;max-width:350px;margin:0 auto;background:white;padding:9px;border:1px solid #dbe3f0;border-radius:16px;box-shadow:0 12px 28px rgba(24,48,82,.18);">
-
     <a href="{{ '/assets/images/dance-photos/salsa-festival-2011-performers-group.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
-
-      <img
-        src="{{ '/assets/images/dance-photos/salsa-festival-2011-performers-group.jpg' | relative_url }}"
-        alt="A group photograph at the 2011 salsa festival"
-        loading="lazy"
-        style="width:100%;height:auto;display:block;border-radius:10px;"
-      >
-
+      <img src="{{ '/assets/images/dance-photos/salsa-festival-2011-performers-group.jpg' | relative_url }}" alt="A group photograph at the 2011 salsa festival" loading="lazy" style="width:100%;height:auto;display:block;border-radius:10px;">
     </a>
-
-    <figcaption style="font-size:.88rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">
-      A memory from the 2011 salsa festival. Click to enlarge.
-    </figcaption>
-
+    <figcaption style="font-size:.88rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">A memory from the 2011 salsa festival. Click to enlarge.</figcaption>
   </figure>
-
 </div>
 
 {% include about-photo-gallery.html folder="dance-photos" title="More Salsa Dancing & Festival Photos" %}
@@ -378,24 +376,11 @@ Chapter 4: Hobbies &amp; Adventures
 <p>I've enjoyed sea kayaking, surfing in Tofino, hiking, and geocaching. These were opportunities to get outside, explore different places, and enjoy a change of pace.</p>
 
 <!-- FEATURE PHOTO: KAYAKING -->
-
 <figure style="max-width:760px;margin:24px auto;background:white;padding:10px;border:1px solid #dbe3f0;border-radius:17px;box-shadow:0 12px 28px rgba(24,48,82,.16);">
-
   <a href="{{ '/assets/images/sea-kayaking-adventures/kayakers-paddling-at-sunset.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
-
-    <img
-      src="{{ '/assets/images/sea-kayaking-adventures/kayakers-paddling-at-sunset.jpg' | relative_url }}"
-      alt="A group of sea kayakers paddling across calm water at sunset"
-      loading="lazy"
-      style="display:block;width:100%;height:auto;border-radius:10px;"
-    >
-
+    <img src="{{ '/assets/images/sea-kayaking-adventures/kayakers-paddling-at-sunset.jpg' | relative_url }}" alt="A group of sea kayakers paddling across calm water at sunset" loading="lazy" style="display:block;width:100%;height:auto;border-radius:10px;">
   </a>
-
-  <figcaption style="font-size:.88rem;color:#526278;padding:11px 6px 4px;line-height:1.45;">
-    Sea kayaking at sunset — one of my outdoor adventures. Click to enlarge.
-  </figcaption>
-
+  <figcaption style="font-size:.88rem;color:#526278;padding:11px 6px 4px;line-height:1.45;">Sea kayaking at sunset — one of my outdoor adventures. Click to enlarge.</figcaption>
 </figure>
 
 {% include about-photo-gallery.html folder="sea-kayaking-adventures" title="More Sea Kayaking Photos" %}
@@ -409,36 +394,17 @@ Chapter 4: Hobbies &amp; Adventures
 <p>I've also enjoyed Muay Thai kickboxing and refereeing roller derby. Both brought different challenges and experiences that I still appreciate looking back on.</p>
 
 <!-- FEATURE PHOTO: ROLLER DERBY -->
-
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin:26px 0;">
-
   <figure style="flex:0 1 350px;width:100%;max-width:350px;margin:0 auto;background:white;padding:9px;border:1px solid #dbe3f0;border-radius:16px;box-shadow:0 12px 28px rgba(24,48,82,.18);">
-
     <a href="{{ '/assets/images/roller-derby-referee/roller-derby-referee-on-track.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
-
-      <img
-        src="{{ '/assets/images/roller-derby-referee/roller-derby-referee-on-track.jpg' | relative_url }}"
-        alt="A roller derby referee on the track during an event"
-        loading="lazy"
-        style="width:100%;height:auto;display:block;border-radius:10px;"
-      >
-
+      <img src="{{ '/assets/images/roller-derby-referee/roller-derby-referee-on-track.jpg' | relative_url }}" alt="A roller derby referee on the track during an event" loading="lazy" style="width:100%;height:auto;display:block;border-radius:10px;">
     </a>
-
-    <figcaption style="font-size:.88rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">
-      One of my roller derby refereeing memories. Click to enlarge.
-    </figcaption>
-
+    <figcaption style="font-size:.88rem;color:#526278;padding:10px 4px 3px;line-height:1.45;">One of my roller derby refereeing memories. Click to enlarge.</figcaption>
   </figure>
-
   <div style="flex:1 1 280px;min-width:0;">
-
     <p>Roller derby refereeing was certainly one of the more unusual activities I've taken part in. It was a very different experience from the other hobbies I enjoyed.</p>
-
     <p>I've also spent time training in Muay Thai, another activity I'd gladly return to if the opportunity presented itself.</p>
-
   </div>
-
 </div>
 
 {% include about-photo-gallery.html folder="kickboxing-mma" title="Kickboxing & Martial Arts Photos" %}
@@ -458,8 +424,6 @@ Chapter 4: Hobbies &amp; Adventures
 <p><strong>I enjoy variety, and I don't see that changing anytime soon.</strong></p>
 
 </details>
-
-
 ---
 
 # My Journal
