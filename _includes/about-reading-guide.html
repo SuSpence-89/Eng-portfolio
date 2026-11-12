@@ -102,15 +102,33 @@
   outline-offset: 2px;
 }
 
-/* Wide screens: place the full vertical navigation in an actual side gutter. */
+/* Desktop sidebar grows to fit every chapter: no internal scroll box. */
 #about-reading-guide.is-docked {
   right: auto;
-  width: var(--guide-width, 225px);
-  max-height: calc(100vh - 145px);
-  overflow-y: auto;
+  width: var(--guide-width, 265px);
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
   padding: 15px;
 }
 #about-reading-guide.is-docked .about-reading-guide-toggle { display: none; }
+#about-reading-guide.is-docked .about-reading-guide-links {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+/* If the browser window is short, tighten spacing before using compact mode. */
+#about-reading-guide.is-docked.is-condensed { padding: 10px; }
+#about-reading-guide.is-docked.is-condensed .about-reading-guide-heading {
+  margin-bottom: 7px;
+}
+#about-reading-guide.is-docked.is-condensed .about-reading-guide-links { gap: 4px; }
+#about-reading-guide.is-docked.is-condensed .about-reading-guide-links a {
+  padding: 6px 8px;
+  font-size: 0.76rem;
+  line-height: 1.25;
+}
 
 /* Smaller screens: a compact Chapters button opens the vertical list on demand. */
 #about-reading-guide.is-compact {
@@ -259,13 +277,24 @@ details.story-chapter, #my-journal { scroll-margin-top: 85px; }
 
     // Only keep the full sidebar visible when it fits OUTSIDE the story column.
     // On narrow screens the small Chapters button remains available instead.
+    function switchToCompact() {
+      const wasDocked = guide.classList.contains("is-docked");
+      guide.classList.remove("is-docked", "is-condensed");
+      guide.classList.add("is-compact");
+      guide.style.left = "";
+      guide.style.right = "";
+      if (wasDocked) setOpen(false);
+    }
+
     function positionGuide() {
       const bounds = chapters[0].getBoundingClientRect();
       const rightSpace = window.innerWidth - bounds.right;
       const leftSpace = bounds.left;
-      const sidebarWidth = 230;
+      const sidebarWidth = 265;
       const gap = 20;
       const margin = 38;
+      const topOffset = 110;
+      const bottomMargin = 20;
       let left = null;
 
       if (window.innerWidth > 1000 && rightSpace >= sidebarWidth + gap + margin) {
@@ -274,20 +303,26 @@ details.story-chapter, #my-journal { scroll-margin-top: 85px; }
         left = bounds.left - sidebarWidth - gap;
       }
 
-      if (left !== null) {
-        guide.classList.add("is-docked");
-        guide.classList.remove("is-compact");
-        guide.style.left = Math.round(left) + "px";
-        guide.style.right = "auto";
-        guide.style.setProperty("--guide-width", sidebarWidth + "px");
-        setOpen(false);
-      } else {
-        const wasDocked = guide.classList.contains("is-docked");
-        guide.classList.remove("is-docked");
-        guide.classList.add("is-compact");
-        guide.style.left = "";
-        guide.style.right = "";
-        if (wasDocked) setOpen(false);
+      if (left === null) {
+        switchToCompact();
+        return;
+      }
+
+      guide.classList.remove("is-compact", "is-condensed");
+      guide.classList.add("is-docked");
+      guide.style.left = Math.round(left) + "px";
+      guide.style.right = "auto";
+      guide.style.setProperty("--guide-width", sidebarWidth + "px");
+      setOpen(false);
+
+      // Let the sidebar expand for additional chapters, without a scrollbar.
+      // On shorter windows, reduce spacing first; if necessary use compact mode.
+      const availableHeight = window.innerHeight - topOffset - bottomMargin;
+      if (guide.scrollHeight > availableHeight) {
+        guide.classList.add("is-condensed");
+      }
+      if (guide.scrollHeight > availableHeight) {
+        switchToCompact();
       }
     }
 
