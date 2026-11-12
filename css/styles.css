@@ -1427,3 +1427,12 @@ details.story-chapter > summary:focus-visible {
 
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
+
+/* ==========================================
+   AI PORTFOLIO — PROJECT CARD IMAGE POSITION
+   ========================================== */
+
+#projects img[src*="ai-assisted-portfolio/website-cover.jpg"] {
+  object-fit: cover !important;
+  object-position: center top !important;
+}
