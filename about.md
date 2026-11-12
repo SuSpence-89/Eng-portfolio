@@ -257,6 +257,10 @@ Those kinds of moments are what made the series memorable to me.
 
 Of all the novels I've read over the years, **Terry Goodkind's *Faith of the Fallen* remains my favourite book of all time.**
 
+### Photos from My Childhood
+
+{% include about-photo-gallery.html folder="growing-up-in-rockcreek" title="Growing Up in Rock Creek — Photo Album" %}
+
 </details>
 
 <!-- CHAPTER 2 -->
@@ -341,6 +345,8 @@ Those were some of the best times of my life.
 
 I later introduced my wife to Latin dancing, and it's something we've been able to enjoy together.
 
+{% include about-photo-gallery.html folder="dance-photos" title="Salsa Dancing & Festival Memories" %}
+
 ### Outdoor Adventures & Other Interests
 
 Over the years, I've also enjoyed:
@@ -359,7 +365,23 @@ I suppose I've never been particularly good at limiting myself to just one or tw
 
 **I enjoy variety, and I don't see that changing anytime soon.**
 
-*More stories and photo galleries will be added to this chapter.*
+### More Adventures in Pictures
+
+I've collected additional photographs from some of the hobbies and adventures I've enjoyed over the years. Each album is optional to open, so you can browse without interrupting the story.
+
+{% include about-photo-gallery.html folder="sea-kayaking-adventures" title="Sea Kayaking Adventures" %}
+
+{% include about-photo-gallery.html folder="tofino-surfing" title="Surfing in Tofino" %}
+
+{% include about-photo-gallery.html folder="hiking-and-geocaching" title="Hiking & Geocaching" %}
+
+{% include about-photo-gallery.html folder="kickboxing-mma" title="Kickboxing & Martial Arts" %}
+
+{% include about-photo-gallery.html folder="roller-derby-referee" title="Roller Derby Refereeing" %}
+
+{% include about-photo-gallery.html folder="hunting" title="Hunting & the Outdoors" %}
+
+*More memories and photographs may be added to these albums over time.*
 
 </details>
 
