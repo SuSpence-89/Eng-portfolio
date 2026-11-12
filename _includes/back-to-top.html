@@ -168,24 +168,33 @@
   outline-offset: 5px;
 }
 
-/* Mobile */
+
+/* Mobile — 25% smaller button */
 
 @media (max-width: 600px) {
   #back-to-top {
-    width: 54px;
-    height: 66px;
+    width: 41px;
+    height: 50px;
     right: 15px;
     bottom: 20px;
-    border-radius: 17px;
+    padding: 5px;
+    border-radius: 13px;
+    gap: 2px;
+  }
+
+  #back-to-top::before {
+    inset: 3px;
+    border-radius: 10px;
   }
 
   #back-to-top svg {
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
   }
 
   #back-to-top .back-to-top-label {
-    font-size: 9px;
+    font-size: 8px;
+    letter-spacing: 1px;
   }
 }
 
