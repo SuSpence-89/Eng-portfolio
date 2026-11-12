@@ -1409,3 +1409,21 @@ details.story-chapter > summary:focus-visible {
     animation: none !important;
   }
 }
+
+/* ==========================================
+   AI PORTFOLIO PROJECT — COVER IMAGE
+   ========================================== */
+
+.post-view .summary img[src*="ai-assisted-portfolio/website-cover.jpg"] {
+  display: block;
+  width: 100% !important;
+  max-width: 580px !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+
+  margin: 20px auto 25px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
