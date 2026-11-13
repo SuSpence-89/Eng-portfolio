@@ -41,41 +41,185 @@ external-links:    # input only your own url slug. The icons with missing entrie
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
-  - category: 3D Modeling
-    tools:
-    - Solidworks 2024
-    - AutoCad 2025
-    - AutoCad Electrical
-    - Creo
-    - Fusion 360 (Autodesk)
-    - Inventor (Autodesk)
-  - category: Prototyping
-    tools:
-    - CNC milling & lathe programming
-    - FDM (Additive Manufacturing)
-    - Laser engraving
-    - Water Jet Cutting
-    - Arduino / Raspberry Pi
-    - Breadboarding for circuit testing
-    - Welding
-  - category: Design Standards / Practices
-    tools:
-    - GD&T ASME Y14
-    - ISO fits and tolerances
-    - PLM (PTC Windchill / Arena) 
-    - CSA B139, Series 24
-  - category: PCB Design
-    tools:
-    - Altium Designer
-    - Altium
-    - Eagle 
-    - KiCad
-  - category: Problem Solving / Risk Management
-    tools:
-    - Root Cause Analysis (e.g., 5 Whys, Fishbone Diagram)
-    - DFMEA / PFMEA 
-    - Six Sigma methodologies
-    - LEED Green Associate
+- category: 3D Modeling
+  tools:
+  - name: SolidWorks 2024
+    description: 3D computer-aided design (CAD) software for creating mechanical parts, assemblies and production
+      drawings.
+    example: Design a bracket, fit it into an assembly and produce a drawing for fabrication.
+    background: Completed Introduction to SOLIDWORKS and Advanced Sketching Techniques courses (SolidProfessor,
+      2026).
+  - name: SOLIDWORKS Routing (Training)
+    description: Specialized SOLIDWORKS tools for planning pipe, tube, cable and electrical routes within assemblies.
+    example: Lay out a cable path through a machine assembly and document the route.
+    background: Completed SOLIDWORKS Routing course (SolidProfessor, October 2026).
+  - name: SOLIDWORKS PDM Professional (Training)
+    description: A file and revision management system for controlling CAD documents and related engineering records.
+    example: Check a drawing in or out, find the approved revision and follow a document workflow.
+    background: Completed SOLIDWORKS PDM Professional course (SolidProfessor, October 2026).
+  - name: AutoCAD 2025
+    description: Technical drafting software used to create accurate two-dimensional plans and drawings.
+    example: Prepare a dimensioned equipment layout or fabrication drawing.
+  - name: AutoCAD Electrical
+    description: An AutoCAD toolset for electrical schematics, wiring diagrams and component documentation.
+    example: Document how electrical components are wired together in a control system.
+    background: Completed AutoCAD Electrical training (SolidProfessor, October 2026).
+  - name: Creo
+    description: Parametric CAD software for designing and revising mechanical products.
+    example: Change a model dimension and update the associated features and drawings.
+  - name: Fusion 360 (Autodesk)
+    description: A design platform combining 3D CAD with fabrication and manufacturing tools.
+    example: Model a prototype and prepare it for machining or 3D printing.
+  - name: Inventor (Autodesk)
+    description: Mechanical 3D CAD software for parts, assemblies, drawings and design documentation.
+    example: Check how individual machine components fit and move within an assembly.
+- category: Prototyping
+  tools:
+  - name: CNC milling & lathe programming
+    description: Preparing instructions for computer-controlled machines that cut materials into precision parts.
+    example: Plan tool movements to machine a shaft or a metal mounting plate.
+  - name: FDM (Additive Manufacturing)
+    description: 'Fused deposition modelling: a type of 3D printing that builds plastic parts layer by layer.'
+    example: Print a physical test fit of a designed component before full production.
+  - name: Laser engraving
+    description: Using a controlled laser beam to mark, label or engrave a surface.
+    example: Create durable equipment labels or engraved metal identification tags.
+  - name: Water Jet Cutting
+    description: Cutting materials using a high-pressure stream of water, often mixed with abrasive material.
+    example: Cut a precise outline from sheet material without a heat-affected edge.
+  - name: Arduino / Raspberry Pi
+    description: Small computing platforms commonly used for electronics experiments, controls and prototypes.
+    example: Connect a sensor, read its signals and use them to control a device.
+  - name: Breadboarding for circuit testing
+    description: Building temporary electrical circuits on a reusable board without permanent soldering.
+    example: Test a switch, LED or sensor circuit before making a permanent assembly.
+  - name: Welding
+    description: Joining metal pieces using heat and, depending on the process, filler material or pressure.
+    example: Fabricate or repair a steel support structure.
+- category: Design Standards / Practices
+  tools:
+  - name: GD&T (ASME Y14.5)
+    description: 'Geometric Dimensioning and Tolerancing: a standardized drawing language for controlling the
+      allowable variation of manufactured parts.'
+    example: Specify how flat or accurately positioned a mounting surface must be.
+  - name: ISO fits and tolerances
+    description: International systems for specifying how closely mating parts should fit together.
+    example: Choose a clearance or interference fit between a shaft and a hole.
+  - name: PLM (PTC Windchill / Arena)
+    description: 'Product Lifecycle Management: systems used to control design files, revisions, approvals and
+      product information.'
+    example: Track which revision of a drawing is approved for production.
+  - name: CSA B139 Series
+    description: Canadian installation-code requirements for oil-burning equipment and related systems.
+    example: Check an oil-fired equipment installation against the applicable code requirements.
+- category: Aviation & Quality Management
+  tools:
+  - name: AF9000+ Quality Management
+    description: 'Air Force 9000 Plus: a quality-management standard for aerospace engineering and maintenance
+      in the Canadian military.'
+    example: Use documented procedures, traceable records and corrective actions to support consistent maintenance
+      quality.
+  - name: Aircraft Maintenance Documentation
+    description: Recording and following approved technical instructions, inspections and maintenance actions.
+    example: Ensure completed maintenance can be traced to the correct equipment, procedure and record.
+- category: Workplace Safety & Equipment Training
+  tools:
+  - name: Transportation of Dangerous Goods (TDG)
+    description: Canadian training on classifying, documenting, marking and safely transporting dangerous goods.
+    example: Check a regulated shipment for the correct classification, shipping documents and required safety
+      marks.
+    background: Completed TDG training (August 2026).
+  - name: Hazard Assessment & Management
+    description: Identifying workplace hazards and choosing controls, safe work procedures and permits to reduce
+      risk.
+    example: Carry out a job hazard analysis and identify required precautions before equipment maintenance.
+    background: Completed Hazard Management training (July 2026).
+  - name: Front-End Loader Operation (Training)
+    description: Training in the knowledge and skills used for safe front-end loader operation.
+    example: Perform pre-operation checks and move material using the equipment safely.
+    background: Completed Front-end Loader-Alberta training; certificate issued May 2024, expiring May 2027.
+- category: Problem Solving / Risk Management
+  tools:
+  - name: Root Cause Analysis (5 Whys / Fishbone)
+    description: Structured methods for finding the underlying cause of a problem rather than only treating the
+      symptoms.
+    example: Investigate repeated equipment failures by tracing possible causes and checking the evidence.
+  - name: Six Sigma Fundamentals (Introductory)
+    description: A process-improvement approach focused on reducing defects, variation and unnecessary rework.
+    example: Measure recurring process errors and identify improvements to make results more consistent.
+    background: Introduced to Six Sigma through diploma coursework at NAIT and Lakeland College; foundational
+      training, not a Six Sigma Belt certification.
+- category: Sustainability & Process Improvement
+  tools:
+  - name: LEED Certification Concepts (Introductory)
+    description: An introduction to the Leadership in Energy and Environmental Design (LEED) building sustainability
+      rating system and its goals.
+    example: Consider how energy, water, materials and indoor environmental quality affect sustainable building
+      design.
+    background: Introductory LEED-related coursework and completion of Introduction to LEED Certification on LinkedIn
+      Learning. Does not imply the LEED Green Associate professional credential.
+- category: Supply Chain & Procurement
+  tools:
+  - name: Technical Purchasing & Procurement
+    description: Sourcing and purchasing goods or services while checking technical requirements, price and suitability.
+    example: Compare quotations for a specialized industrial component against the required specifications.
+    background: Work experience in technical purchasing and procurement.
+  - name: Supplier & Vendor Evaluation
+    description: Assessing suppliers using factors such as quality, responsiveness, cost and delivery performance.
+    example: Use a scorecard to make supplier selection more consistent and transparent.
+    background: Work experience evaluating suppliers using practical performance criteria.
+  - name: Supply Chain Coordination
+    description: Coordinating the people, materials and information needed to deliver equipment or complete a
+      project.
+    example: Follow up on long-lead components so they arrive when the work needs them.
+  - name: International Logistics & Importing
+    description: Coordinating cross-border shipments, customs documentation and importer responsibilities.
+    example: Plan the information needed when industrial equipment is shipped into Canada.
+    background: Research and work relating to imported industrial goods; completed logistics learning courses.
+  - name: Oracle-Based AMMIS
+    description: Experience using an Oracle-based maintenance or material-management information system.
+    example: Look up records and work with system information supporting equipment or material workflows.
+  - name: Logistics Management (Training)
+    description: Planning and coordinating the movement, handling and delivery of goods and materials.
+    example: Track freight and delivery requirements for an industrial part arriving at a job site.
+    background: Completed Managing Logistics (LinkedIn Learning, December 2025); also completed Understanding
+      Logistics and supply-chain learning courses.
+  - name: Warehousing Operations (Professional Certificate Learning Path)
+    description: Warehouse processes for receiving, storing, tracking and dispatching materials accurately and
+      efficiently.
+    example: Organize incoming inventory so the correct components can be found and issued quickly.
+    background: 'Completed CSCMP Supply Chain Foundations: Warehousing Operations Professional Certificate learning
+      path through LinkedIn Learning (August 2026). This is a course-completion certificate.'
+- category: Programming & Digital Technology
+  tools:
+  - name: Programming & Scripting
+    description: Using code and logical instructions to automate tasks, solve problems or create software.
+    example: Write or adapt a small program to process data or repeat a routine task.
+  - name: AI-Assisted Web Development
+    description: Using AI as a coding assistant while defining requirements, reviewing outputs, testing and refining
+      a website.
+    example: Build a portfolio feature, test it in the browser and correct issues discovered during use.
+  - name: GitHub Pages & Jekyll
+    description: A repository-based publishing workflow that turns site files and templates into a hosted website.
+    example: Maintain pages, reusable components and project entries for a public portfolio.
+  - name: Requirements Definition & Testing
+    description: Identifying what a feature must do, checking it against expectations and fixing issues.
+    example: Verify that a new interactive feature works on desktop and mobile.
+- category: Project Planning & Technical Communication
+  tools:
+  - name: Project Planning & Coordination
+    description: Organizing tasks, dependencies and communication to keep work moving toward a goal.
+    example: Break an equipment-design project into design, review, procurement and fabrication activities.
+  - name: Technical Documentation
+    description: Writing clear information that helps people understand, build, operate or maintain technical
+      systems.
+    example: Prepare a work instruction, maintenance procedure or drawing note.
+  - name: Project Management Foundations (Course)
+    description: Basic project-management principles for defining scope, organizing tasks, coordinating work and
+      monitoring progress.
+    example: Set project milestones and document responsibilities for a small engineering assignment.
+    background: Completed Project Management Foundations course (LinkedIn Learning).
+
 
 
 
