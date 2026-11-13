@@ -28,6 +28,17 @@ The company serves a broad range of industries, including mining, heavy construc
 Its engineered solutions include bulk fuel and lubricant storage, diesel dispensing and offloading systems, high-speed refueling, automated lubrication, and modular fluid-handling infrastructure. These systems are designed to support reliable equipment operation, improve maintenance efficiency, and reduce operational downtime.
 
 Innoflo's work spans system design and engineering through installation and ongoing technical support.
+<figure>
+  <img
+    src="https://cdn.shopify.com/s/files/1/0024/4508/2699/files/Bulk-Fuel-Offloading.jpg"
+    alt="Bulk fuel receiving station with control panels, transfer piping, and diesel storage tanks."
+    loading="lazy">
+  <figcaption>
+    A bulk fuel receiving station shown by Innoflo Solutions, illustrating the type of
+    fuel-handling infrastructure the company supplies.
+    <a href="https://innoflo.com/pages/bulk-offloading">Photo: Innoflo Solutions Inc.</a>
+  </figcaption>
+</figure>
 
 ## Details Coming Soon!
 
