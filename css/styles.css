@@ -1450,9 +1450,11 @@ details.story-chapter > summary:focus-visible {
 }
 
 /* Keep images inside individual project page boundaries */
-.post-view .content img {
+.post-view .content img,
+.portfolio-post-body p img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-inline: auto;
   object-fit: contain;
 }
