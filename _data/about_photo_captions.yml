@@ -1,0 +1,13 @@
+# Custom captions for the autobiography photo albums.
+#
+# To correct a caption, add one line using EXACT folder/filename.jpg shown in GitHub:
+# "dance-photos/your-photo-filename.jpg": "Your own description of this photo."
+#
+# Keep the quotes around both the photo path and the caption.
+# Each key must be unique. The displayed caption will change in both the album
+# thumbnail grid and the full-screen lightbox.
+# A photo without an entry automatically uses a readable version of its filename.
+#
+# Replace the example key below with real photo paths as needed.
+# (This template key matches no real photograph, so it won't be displayed.)
+"__example__": "Write your custom caption here."
