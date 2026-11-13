@@ -30,13 +30,12 @@ Its engineered solutions include bulk fuel and lubricant storage, diesel dispens
 Innoflo's work spans system design and engineering through installation and ongoing technical support.
 <figure>
   <img
-    src="https://cdn.shopify.com/s/files/1/0024/4508/2699/files/Bulk-Fuel-Offloading.jpg"
-    alt="Bulk fuel receiving station with control panels, transfer piping, and diesel storage tanks."
+    src="https://innoflo.com/cdn/shop/files/Fuel-Filtration-System-Innoflo.jpg"
+    alt="A fueling arm extends from the right side of a skid-mounted fuel filtration system."
     loading="lazy">
   <figcaption>
-    A bulk fuel receiving station shown by Innoflo Solutions, illustrating the type of
-    fuel-handling infrastructure the company supplies.
-    <a href="https://innoflo.com/pages/bulk-offloading">Photo: Innoflo Solutions Inc.</a>
+    A fueling arm on an Innoflo fuel filtration skid, shown as an example of the equipment the company supplies.
+    <a href="https://innoflo.com/pages/fuel-filtration">Photo: Innoflo Solutions Inc.</a>
   </figcaption>
 </figure>
 
