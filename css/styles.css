@@ -1436,3 +1436,15 @@ details.story-chapter > summary:focus-visible {
   object-fit: cover !important;
   object-position: center top !important;
 }
+
+/* Show the complete website cover on mobile screens */
+@media (max-width: 767px) {
+  #projects img[src*="ai-assisted-portfolio/website-cover.jpg"] {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
