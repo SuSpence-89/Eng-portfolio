@@ -18,6 +18,17 @@ portfolio_categories:
 skills: []
 ---
 
+
+## About Innoflo Solutions
+
+Innoflo Solutions is a Canadian engineering and industrial equipment company specializing in fuel handling, lubrication, and fluid management systems.
+
+The company serves a broad range of industries, including mining, heavy construction, transportation, agriculture, forestry, municipal fleets, and industrial equipment maintenance.
+
+Its engineered solutions include bulk fuel and lubricant storage, diesel dispensing and offloading systems, high-speed refueling, automated lubrication, and modular fluid-handling infrastructure. These systems are designed to support reliable equipment operation, improve maintenance efficiency, and reduce operational downtime.
+
+Innoflo's work spans system design and engineering through installation and ongoing technical support.
+
 ## Details Coming Soon!
 
 This professional engineering project is currently being prepared for publication.
