@@ -156,9 +156,11 @@
 #about-reading-guide.is-compact:not(.is-open) .about-reading-guide-heading,
 #about-reading-guide.is-compact:not(.is-open) .about-reading-guide-links { display: none; }
 #about-reading-guide.is-compact.is-open {
-  width: min(256px, calc(100vw - 28px));
+  width: min(265px, calc(100vw - 28px));
   padding: 0 10px 12px;
-  max-height: min(75vh, 510px);
+  height: auto !important;
+  max-height: calc(100vh - 118px);
+  max-height: calc(100dvh - 118px) !important;
   overflow-y: auto;
 }
 #about-reading-guide.is-compact.is-open .about-reading-guide-toggle {
@@ -290,16 +292,21 @@ details.story-chapter, #my-journal { scroll-margin-top: 85px; }
       const bounds = chapters[0].getBoundingClientRect();
       const rightSpace = window.innerWidth - bounds.right;
       const leftSpace = bounds.left;
-      const sidebarWidth = 265;
-      const gap = 20;
-      const margin = 38;
+      // Use the available side margin, rather than demanding a fixed 323px gap.
+      const minSidebarWidth = 215;
+      const maxSidebarWidth = 265;
+      const gap = 12;
+      const margin = 30; // leave clearance for the reading-progress meter
       const topOffset = 110;
       const bottomMargin = 20;
       let left = null;
+      let sidebarWidth = 0;
 
-      if (window.innerWidth > 1000 && rightSpace >= sidebarWidth + gap + margin) {
+      if (window.innerWidth > 1000 && rightSpace >= minSidebarWidth + gap + margin) {
+        sidebarWidth = Math.min(maxSidebarWidth, Math.floor(rightSpace - gap - margin));
         left = bounds.right + gap;
-      } else if (window.innerWidth > 1000 && leftSpace >= sidebarWidth + gap + margin) {
+      } else if (window.innerWidth > 1000 && leftSpace >= minSidebarWidth + gap + margin) {
+        sidebarWidth = Math.min(maxSidebarWidth, Math.floor(leftSpace - gap - margin));
         left = bounds.left - sidebarWidth - gap;
       }
 
