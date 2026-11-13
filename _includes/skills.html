@@ -1,23 +1,224 @@
 <section id="skills" class="skills-section">
-    <h2>Skills</h2>
-        
-    <ul class="skill-categories">
-        {% for skill in site.skills %}
-          <li>
-            <div class="skills-card">
-              <span class="category-label">{{ skill.category}}</span>
-            
-              <ul class="skills-list">
-                {% for skill in skill.tools %}
-                  <li class="skill">
-                    {{ skill }}
-                  </li>
-                {% endfor %}
-                </ul>
-            </div>
-            
-          </li> 
-        {% endfor %}
-      </ul>
+  <h2>Skills</h2>
+  <p class="skills-intro">Select any skill to see what it means and how it can be used.</p>
 
+  <ul class="skill-categories">
+    {% for group in site.skills %}
+      <li>
+        <div class="skills-card">
+          <span class="category-label">{{ group.category | escape }}</span>
+
+          <ul class="skills-list">
+            {% for item in group.tools %}
+              {% assign skill_name = item.name | default: item %}
+              <li class="skill">
+                {% if item.description %}
+                  <button
+                    type="button"
+                    class="skill-info-button"
+                    data-skill-name="{{ skill_name | escape }}"
+                    data-skill-description="{{ item.description | escape }}"
+                    data-skill-example="{{ item.example | default: '' | escape }}"
+                    data-skill-background="{{ item.background | default: '' | escape }}"
+                    aria-controls="skill-explainer-{{ forloop.parentloop.index0 }}"
+                    aria-expanded="false"
+                  >
+                    {{ skill_name | escape }} <span class="skill-plus" aria-hidden="true">+</span>
+                  </button>
+                {% else %}
+                  <span class="skill-static">{{ skill_name | escape }}</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+
+          <div class="skill-explainer" id="skill-explainer-{{ forloop.index0 }}" hidden aria-live="polite">
+            <div class="skill-explainer-head">
+              <h3 class="skill-explainer-title"></h3>
+              <button type="button" class="skill-explainer-close" aria-label="Close skill explanation">&times;</button>
+            </div>
+            <div class="skill-explainer-label">What it means</div>
+            <p class="skill-explainer-description"></p>
+            <div class="skill-explainer-example-wrap" hidden>
+              <div class="skill-explainer-label">Example in practice</div>
+              <p class="skill-explainer-example"></p>
+            </div>
+            <div class="skill-explainer-background-wrap" hidden>
+              <div class="skill-explainer-label">Training / experience</div>
+              <p class="skill-explainer-background"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
+
+<style>
+  /* Interactive Skills — isolated from project-card skill badges */
+  #skills .skills-intro {
+    margin: -3px 0 22px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #58667a;
+  }
+  #skills .skills-list > li.skill {
+    display: block;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    border-radius: 0;
+  }
+  #skills .skill-info-button,
+  #skills .skill-static {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: #f0f4ff;
+    color: #326ce4;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-align: left;
+  }
+  #skills .skill-info-button { cursor: pointer; transition: background .18s ease, box-shadow .18s ease, transform .18s ease; }
+  #skills .skill-info-button:hover,
+  #skills .skill-info-button:focus-visible {
+    background: #e2edff;
+    border-color: #afc8ff;
+    box-shadow: 0 3px 9px rgba(42, 95, 187, .10);
+  }
+  #skills .skill-info-button:focus-visible { outline: 2px solid #4a76ee; outline-offset: 3px; }
+  #skills .skill-info-button[aria-expanded="true"] {
+    background: #e4efff;
+    border-color: #8bb6ff;
+    color: #1551ae;
+    font-weight: 600;
+  }
+  #skills .skill-plus {
+    margin-bottom: 0; /* The existing stylesheet adds margin to all spans. */
+    color: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    transition: transform .18s ease;
+  }
+  #skills .skill-info-button[aria-expanded="true"] .skill-plus { transform: rotate(45deg); }
+  #skills .skill-explainer[hidden],
+  #skills .skill-explainer-example-wrap[hidden] { display: none !important; }
+  #skills .skill-explainer {
+    margin-top: 17px;
+    padding: 19px 21px;
+    border: 1px solid #c8daff;
+    border-left: 4px solid #4a76ee;
+    border-radius: 13px;
+    background: linear-gradient(125deg, #f8fbff, #ffffff);
+    box-shadow: 0 7px 20px rgba(28, 67, 137, .09);
+    animation: skill-explainer-in .2s ease-out;
+  }
+  #skills .skill-explainer-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  #skills .skill-explainer-title {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+  }
+  #skills .skill-explainer-close {
+    border: 1px solid #dde5f1;
+    background: white;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    font: inherit;
+    font-size: 24px;
+    color: #57708a;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  #skills .skill-explainer-close:hover { border-color: #8bb6ff; color: #1551ae; }
+  #skills .skill-explainer-label {
+    font-size: 11px;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a76ee;
+    margin-bottom: 5px;
+  }
+  #skills .skill-explainer-description,
+  #skills .skill-explainer-example {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    color: #29374b;
+  }
+  #skills .skill-explainer-example-wrap,
+  #skills .skill-explainer-background-wrap { margin-top: 14px; }
+  #skills .skill-explainer-background-wrap[hidden] { display: none !important; }
+  #skills .skill-explainer-background { font-size: 13px; line-height: 1.65; margin: 0; color: #53637a; }
+  @keyframes skill-explainer-in {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (max-width: 600px) {
+    #skills .skill-info-button { font-size: 13px; }
+    #skills .skill-explainer { padding: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #skills .skill-explainer { animation: none; }
+    #skills .skill-info-button, #skills .skill-plus { transition: none; }
+  }
+</style>
+
+<script>
+(function () {
+  const section = document.getElementById('skills');
+  if (!section) return;
+
+  section.querySelectorAll('.skills-card').forEach(function (card) {
+    const buttons = Array.from(card.querySelectorAll('.skill-info-button'));
+    const panel = card.querySelector('.skill-explainer');
+    const title = panel.querySelector('.skill-explainer-title');
+    const description = panel.querySelector('.skill-explainer-description');
+    const exampleWrap = panel.querySelector('.skill-explainer-example-wrap');
+    const example = panel.querySelector('.skill-explainer-example');
+    const backgroundWrap = panel.querySelector('.skill-explainer-background-wrap');
+    const background = panel.querySelector('.skill-explainer-background');
+    const closeButton = panel.querySelector('.skill-explainer-close');
+
+    function closePanel() {
+      buttons.forEach(function (button) { button.setAttribute('aria-expanded', 'false'); });
+      panel.hidden = true;
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const wasOpen = button.getAttribute('aria-expanded') === 'true';
+        closePanel();
+        if (wasOpen) return;
+
+        title.textContent = button.dataset.skillName || button.textContent.trim();
+        description.textContent = button.dataset.skillDescription || '';
+        const exampleText = button.dataset.skillExample || '';
+        exampleWrap.hidden = !exampleText;
+        example.textContent = exampleText;
+        const backgroundText = button.dataset.skillBackground || '';
+        backgroundWrap.hidden = !backgroundText;
+        background.textContent = backgroundText;
+        panel.hidden = false;
+        button.setAttribute('aria-expanded', 'true');
+      });
+    });
+
+    closeButton.addEventListener('click', closePanel);
+  });
+})();
+</script>
