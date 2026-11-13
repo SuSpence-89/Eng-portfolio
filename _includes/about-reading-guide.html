@@ -118,6 +118,15 @@
   overflow: visible;
 }
 
+/* On higher browser zoom, a narrower sidebar stays readable and expanded. */
+#about-reading-guide.is-docked.is-slim { padding: 10px; }
+#about-reading-guide.is-docked.is-slim .about-reading-guide-links { gap: 5px; }
+#about-reading-guide.is-docked.is-slim .about-reading-guide-links a {
+  padding: 7px 7px;
+  font-size: clamp(0.72rem, 0.75vw, 0.76rem);
+  line-height: 1.26;
+}
+
 /* If the browser window is short, tighten spacing before using compact mode. */
 #about-reading-guide.is-docked.is-condensed { padding: 10px; }
 #about-reading-guide.is-docked.is-condensed .about-reading-guide-heading {
@@ -218,6 +227,63 @@ details.story-chapter, #my-journal { scroll-margin-top: 85px; }
   background: linear-gradient(180deg, #78adff, #2f70df);
 }
 
+/* If the sidebar approaches the screen edge, put progress BELOW it, not beside it. */
+#about-reading-progress.is-guide-footer {
+  right: auto;
+  bottom: auto;
+  transform: none;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.98);
+  border: 1px solid #dbe5f3;
+  border-radius: 10px;
+  box-shadow: 0 3px 9px rgba(23,69,125,0.08);
+}
+#about-reading-progress.is-guide-footer .about-reading-progress-percent {
+  flex: 0 0 33px;
+  text-align: left;
+  font-size: 0.73rem;
+}
+#about-reading-progress.is-guide-footer .about-reading-progress-track {
+  flex: 1 1 auto;
+  width: auto;
+  height: 6px;
+}
+#about-reading-progress.is-guide-footer .about-reading-progress-fill {
+  top: 0;
+  bottom: auto;
+  height: 100%;
+  width: var(--read-percentage);
+}
+/* Last resort for very short windows: a thin bar at the top. */
+#about-reading-progress.is-top-meter {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  transform: none;
+  gap: 0;
+  z-index: 95;
+}
+#about-reading-progress.is-top-meter .about-reading-progress-percent { display: none; }
+#about-reading-progress.is-top-meter .about-reading-progress-track {
+  width: 100%;
+  height: 4px;
+  border-radius: 0;
+}
+#about-reading-progress.is-top-meter .about-reading-progress-fill {
+  top: 0;
+  bottom: auto;
+  width: var(--read-percentage);
+  height: 100%;
+  border-radius: 0;
+}
+
 @media (max-width: 850px) {
   #about-reading-guide { top: 79px; right: 12px; }
   #about-reading-progress {
@@ -279,34 +345,51 @@ details.story-chapter, #my-journal { scroll-margin-top: 85px; }
 
     // Only keep the full sidebar visible when it fits OUTSIDE the story column.
     // On narrow screens the small Chapters button remains available instead.
+    function resetProgressPosition() {
+      progress.classList.remove("is-guide-footer", "is-top-meter");
+      progress.style.left = "";
+      progress.style.right = "";
+      progress.style.top = "";
+      progress.style.width = "";
+    }
+
     function switchToCompact() {
       const wasDocked = guide.classList.contains("is-docked");
-      guide.classList.remove("is-docked", "is-condensed");
+      guide.classList.remove("is-docked", "is-condensed", "is-slim");
       guide.classList.add("is-compact");
       guide.style.left = "";
       guide.style.right = "";
+      guide.style.top = "";
+      resetProgressPosition();
+      // Narrow/mobile view: keep progress at top so it never collides with Chapters.
+      progress.classList.add("is-top-meter");
       if (wasDocked) setOpen(false);
     }
 
     function positionGuide() {
       const bounds = chapters[0].getBoundingClientRect();
-      const rightSpace = window.innerWidth - bounds.right;
+      // clientWidth excludes the browser's vertical scrollbar (innerWidth may not).
+      const viewportWidth = document.documentElement.clientWidth;
+      const rightSpace = viewportWidth - bounds.right;
       const leftSpace = bounds.left;
-      // Use the available side margin, rather than demanding a fixed 323px gap.
-      const minSidebarWidth = 215;
+      const minSidebarWidth = 130;
       const maxSidebarWidth = 265;
-      const gap = 12;
-      const margin = 30; // leave clearance for the reading-progress meter
-      const topOffset = 110;
-      const bottomMargin = 20;
+      const gap = 8;
+      const edgeMargin = 8;
+      const topOffset = Math.min(110, Math.max(64, Math.round(window.innerHeight * 0.12)));
+      const bottomMargin = 16;
       let left = null;
       let sidebarWidth = 0;
+      let onRight = false;
 
-      if (window.innerWidth > 1000 && rightSpace >= minSidebarWidth + gap + margin) {
-        sidebarWidth = Math.min(maxSidebarWidth, Math.floor(rightSpace - gap - margin));
+      // A fluid-width dock remains expanded at normal browser zoom levels,
+      // while never covering the story column.
+      if (rightSpace >= minSidebarWidth + gap + edgeMargin) {
+        sidebarWidth = Math.min(maxSidebarWidth, Math.floor(rightSpace - gap - edgeMargin));
         left = bounds.right + gap;
-      } else if (window.innerWidth > 1000 && leftSpace >= minSidebarWidth + gap + margin) {
-        sidebarWidth = Math.min(maxSidebarWidth, Math.floor(leftSpace - gap - margin));
+        onRight = true;
+      } else if (leftSpace >= minSidebarWidth + gap + edgeMargin) {
+        sidebarWidth = Math.min(maxSidebarWidth, Math.floor(leftSpace - gap - edgeMargin));
         left = bounds.left - sidebarWidth - gap;
       }
 
@@ -315,21 +398,37 @@ details.story-chapter, #my-journal { scroll-margin-top: 85px; }
         return;
       }
 
-      guide.classList.remove("is-compact", "is-condensed");
+      guide.classList.remove("is-compact", "is-condensed", "is-slim");
       guide.classList.add("is-docked");
+      if (sidebarWidth < 225) guide.classList.add("is-slim");
       guide.style.left = Math.round(left) + "px";
       guide.style.right = "auto";
+      guide.style.top = topOffset + "px";
       guide.style.setProperty("--guide-width", sidebarWidth + "px");
       setOpen(false);
 
-      // Let the sidebar expand for additional chapters, without a scrollbar.
-      // On shorter windows, reduce spacing first; if necessary use compact mode.
+      // Reduce spacing if the list grows too tall. Avoid a tiny scroll box.
       const availableHeight = window.innerHeight - topOffset - bottomMargin;
-      if (guide.scrollHeight > availableHeight) {
-        guide.classList.add("is-condensed");
-      }
+      if (guide.scrollHeight > availableHeight) guide.classList.add("is-condensed");
       if (guide.scrollHeight > availableHeight) {
         switchToCompact();
+        return;
+      }
+
+      resetProgressPosition();
+      const rightClearance = viewportWidth - (left + sidebarWidth);
+      // The edge meter and docked guide are too close at 100% zoom.
+      // Put the same progress meter neatly beneath the chapter list instead.
+      if (onRight && rightClearance < 64) {
+        const below = topOffset + guide.offsetHeight + 12;
+        if (below + 40 <= window.innerHeight - 8) {
+          progress.classList.add("is-guide-footer");
+          progress.style.left = Math.round(left) + "px";
+          progress.style.top = Math.round(below) + "px";
+          progress.style.width = sidebarWidth + "px";
+        } else {
+          progress.classList.add("is-top-meter");
+        }
       }
     }
 
