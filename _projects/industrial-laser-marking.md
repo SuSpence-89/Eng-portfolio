@@ -15,7 +15,7 @@ project_date: "During RCAF service"
 show_in_portfolio: true
 
 portfolio_categories:
-  - mechanical
+  - systems
 
 skills:
   - Industrial Laser Marking
