@@ -14,8 +14,7 @@ project_date: "Ongoing"
 show_in_portfolio: true
 
 portfolio_categories:
-  - mechanical
-  - 3d-printing
+  - printing
 
 skills:
   - CAD Modelling
