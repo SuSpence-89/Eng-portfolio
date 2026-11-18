@@ -15,7 +15,7 @@ project_date: "Circa 2013–2014"
 show_in_portfolio: true
 
 portfolio_categories:
-  - mechanical
+  - woodworking
 
 skills:
   - Practical Design & Fabrication
