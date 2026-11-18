@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /projects/technical-logistics-engineering-support/
-title: "Technical Logistics & Engineering Support"
+title: "Logistics & Engineering Support"
 description: "Professional technical logistics and engineering support project. Details coming soon!"
 main-image: /assets/images/project-under-construction.png.png
 cover_position: center center
