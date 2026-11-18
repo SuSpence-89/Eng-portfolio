@@ -277,6 +277,16 @@ Those kinds of moments are what made the series memorable to me.
 
 Of all the novels I've read over the years, **Terry Goodkind's *Faith of the Fallen* remains my favourite book of all time.**
 
+---
+
+## My Best Friend Ryan
+
+*An unlikely friendship that started with a ghost bike — and one that continues to this day.*
+
+{% include ryan-story.html %}
+
+---
+
 ### Photos from My Childhood
 
 {% include about-photo-gallery.html folder="growing-up-in-rockcreek" title="Growing Up in Rock Creek — Photo Album" %}
