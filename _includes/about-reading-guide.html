@@ -185,7 +185,7 @@
 }
 
 /* Scroll offsets account for the fixed site header rather than the old sticky guide. */
-details.story-chapter, #my-journal { scroll-margin-top: 85px; }
+details.story-chapter, #my-journal, .ryan-story, .ryan-story h3 { scroll-margin-top: 105px; }
 
 /* Reading percentage: keep the same side meter away from the Back-to-Top button. */
 #about-reading-progress {
@@ -489,8 +489,26 @@ details.story-chapter, #my-journal { scroll-margin-top: 85px; }
       links.push({ element: journalLink, section: journalHeading });
     }
 
-    const sharedSection = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (sharedSection && chapters.includes(sharedSection)) sharedSection.open = true;
+    function openStoryFromHash() {
+      let id;
+      try { id = decodeURIComponent(location.hash.slice(1)); }
+      catch (_) { return; }
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (!target) return;
+      const parentChapter = target.closest("details.story-chapter");
+      if (parentChapter) {
+        parentChapter.open = true;
+        // Allow the browser to lay out the newly expanded chapter before scrolling.
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            target.scrollIntoView({ behavior: "auto", block: "start" });
+          });
+        });
+      }
+    }
+    openStoryFromHash();
+    window.addEventListener("hashchange", openStoryFromHash);
 
     function updateReadingProgress() {
       const scrollable = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);

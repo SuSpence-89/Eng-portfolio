@@ -97,6 +97,8 @@ I've organized my story into chapters so you can explore whichever parts interes
 
 **Click a chapter title to expand it.**
 
+[**The Ryan Chronicles — Follow a lifelong friendship across my autobiography →**]({{ '/about/ryan-chronicles/' | relative_url }})
+
 {% include about-reading-guide.html %}
 
 <!-- CHAPTER 1 -->
@@ -279,9 +281,20 @@ Of all the novels I've read over the years, **Terry Goodkind's *Faith of the Fal
 
 ---
 
+<div class="ryan-chronicles-feature" style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:26px 0 30px;padding:16px;border:1px solid #c5dbf6;border-left:5px solid #257bd5;border-radius:15px;background:#f3f8ff;box-shadow:0 6px 20px rgba(28,77,137,.08);">
+  <img src="{{ '/assets/images/best-friend-ryan/spencer-and-ryan-by-the-clocks.jpg' | relative_url }}" alt="Spencer and Ryan together" loading="lazy" style="width:110px;height:110px;object-fit:cover;border-radius:12px;flex:none;">
+  <div style="flex:1 1 240px;">
+    <strong style="display:block;color:#1a3f69;font-size:1.14rem;">The Ryan Chronicles</strong>
+    <span style="display:block;margin:5px 0 10px;font-size:.91rem;line-height:1.55;color:#485d74;">A lifetime of friendship, questionable decisions, and stories worth remembering. Follow Ryan's adventures across the chapters of my life.</span>
+    <a href="{{ '/about/ryan-chronicles/' | relative_url }}" style="color:#1769c2;font-weight:700;">Explore The Ryan Chronicles &rarr;</a>
+  </div>
+</div>
+
 ## My Best Friend Ryan
 
 *An unlikely friendship that started with a ghost bike — and one that continues to this day.*
+
+{% include ryan-chronicle-marker.html story="Where it all began — the ghost bike and the school bus reunion" %}
 
 {% include ryan-story.html %}
 
