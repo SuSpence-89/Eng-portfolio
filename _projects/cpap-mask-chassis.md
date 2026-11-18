@@ -17,7 +17,7 @@ project_date: "2026 — Ongoing"
 show_in_portfolio: true
 
 portfolio_categories:
-  - mechanical
+  - printing
   - prototyping
 
 skills:
