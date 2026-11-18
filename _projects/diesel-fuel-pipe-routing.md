@@ -14,7 +14,6 @@ show_in_portfolio: true
 
 portfolio_categories:
   - mechanical
-  - energy
 
 skills: []
 ---
