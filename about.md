@@ -97,8 +97,6 @@ I've organized my story into chapters so you can explore whichever parts interes
 
 **Click a chapter title to expand it.**
 
-[**The Ryan Chronicles — Follow a lifelong friendship across my autobiography →**]({{ '/about/ryan-chronicles/' | relative_url }})
-
 {% include about-reading-guide.html %}
 
 <!-- CHAPTER 1 -->
@@ -449,6 +447,32 @@ Chapter 4: Hobbies &amp; Adventures
 <p><strong>I enjoy variety, and I don't see that changing anytime soon.</strong></p>
 
 </details>
+
+<!-- RYAN CHRONICLES: Keep this collection link after the final story chapter.
+     New chapters should be inserted before My Journal. The script below
+     also moves this footer after the last chapter if more chapters are added
+     between the footer and journal in a future site update. -->
+<div id="ryan-chronicles-chapter-footer" style="margin:22px 0 28px;">
+  <a href="{{ '/about/ryan-chronicles/' | relative_url }}" style="font-weight:700;color:#1769c2;">The Ryan Chronicles — Follow a lifelong friendship across my autobiography &rarr;</a>
+</div>
+<script>
+(function () {
+  function positionRyanChroniclesFooter() {
+    var footer = document.getElementById("ryan-chronicles-chapter-footer");
+    var chapters = document.querySelectorAll("details.story-chapter");
+    var last = chapters.length ? chapters[chapters.length - 1] : null;
+    if (footer && last && last.nextElementSibling !== footer) {
+      last.insertAdjacentElement("afterend", footer);
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", positionRyanChroniclesFooter);
+  } else {
+    positionRyanChroniclesFooter();
+  }
+})();
+</script>
+
 ---
 
 # My Journal
