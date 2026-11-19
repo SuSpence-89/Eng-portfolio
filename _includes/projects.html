@@ -72,12 +72,19 @@
                     <div class="project-card">
 
                         
-                        {% if item['main-image'] %}
+                        {% assign card_image = item['main-image'] %}
+                        {% if item.url contains '/inventory-operations-systems-design/' %}
+                            {% assign inventory_card_path = '/assets/images/inventory-operations-systems-design/inventory-operations-workflow-infographic.png' %}
+                            {% assign inventory_card_file = site.static_files | where: 'path', inventory_card_path | first %}
+                            {% if inventory_card_file %}
+                                {% assign card_image = inventory_card_path %}
+                            {% endif %}
+                        {% endif %}
 
-                            <img src="{{ item['main-image'] | relative_url }}"
+                        {% if card_image %}
+                            <img src="{{ card_image | relative_url }}"
                                  alt="{{ item.title | escape }}"
                                  loading="lazy">
-
                         {% endif %}
 
 
