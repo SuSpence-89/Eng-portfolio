@@ -85,11 +85,24 @@ The new approach made inventory more accessible and helped employees avoid unnec
 
 **The practical benefits were labour-time savings, avoided unnecessary material purchases, improved material traceability, and clearer accountability.** These advantages translated into genuine cost avoidance for the operation. Exact dollar savings, labour hours, and percentage improvements were not formally measured, so they are not presented as quantified financial results.
 
-## Employee training video — planned feature
+## Training feature: The Good, The Bad & The Ugly — Inventory Edition
 
-A short, 1980s/1990s action-movie-style trailer has been developed privately from the staged **Good / Bad / Ugly** receiving skits. The trailer contrasts improper handling with the correct process, using humour to show how employee training supported the change-management effort.
+To introduce the receiving procedure and make employee training more memorable, I developed a short action-movie-style parody trailer from our staged workplace skits. The three scenarios dramatize the consequences of incorrect material handling and contrast them with the correct receiving process. The presentation uses humour and storytelling to reinforce a serious operational message: **check the delivery, follow the process, and keep the inventory records accurate.**
 
-*The trailer remains unpublished while participant and employer/footage permissions are being arranged and the final narration is being refined.*
+{% assign trailer_video = site.static_files | where: "path", "/assets/videos/inventory-good-bad-ugly-trailer.mp4" | first %}
+{% if trailer_video %}
+<video controls playsinline preload="metadata" poster="{{ '/assets/images/inventory-operations-systems-design/trailer-poster.svg' | relative_url }}" style="display:block;width:100%;max-width:100%;height:auto;border-radius:12px;background:#0b1119;" aria-label="The Good, The Bad and The Ugly: Inventory Edition — employee training trailer">
+  <source src="{{ '/assets/videos/inventory-good-bad-ugly-trailer.mp4' | relative_url }}" type="video/mp4">
+  <track kind="captions" src="{{ '/assets/videos/inventory-good-bad-ugly-captions.vtt' | relative_url }}" srclang="en" label="English">
+  Your browser does not support embedded video. <a href="{{ '/assets/videos/inventory-good-bad-ugly-trailer.mp4' | relative_url }}">View the trailer directly</a>.
+</video>
+
+*The Good, The Bad & The Ugly: Inventory Edition · 55-second workplace training parody · Original cinematic narration, music and sound effects.*
+{% else %}
+![The Good, The Bad and The Ugly: Inventory Edition — cinematic training-trailer poster.]({{ '/assets/images/inventory-operations-systems-design/trailer-poster.svg' | relative_url }})
+
+*The finished trailer is prepared for release. Public playback will become available once the footage permissions and video upload are finalized.*
+{% endif %}
 
 ## What the project demonstrates
 
