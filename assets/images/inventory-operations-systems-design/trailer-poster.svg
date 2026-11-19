@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+<title id="title">The Good, The Bad &amp; The Ugly: Inventory Edition</title>
+<desc id="desc">A dramatic gold-on-charcoal movie trailer poster with a stylized play triangle.</desc>
+<defs>
+<radialGradient id="bg" cx="50%" cy="35%" r="72%"><stop stop-color="#304358"/><stop offset=".55" stop-color="#14202d"/><stop offset="1" stop-color="#06080c"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff0b7"/><stop offset=".38" stop-color="#f5c873"/><stop offset=".69" stop-color="#b97927"/><stop offset="1" stop-color="#fce1a7"/></linearGradient>
+<radialGradient id="light" cx="50%" cy="0%" r="83%"><stop stop-color="#c5ab74" stop-opacity=".27"/><stop offset="1" stop-color="#9c7531" stop-opacity="0"/></radialGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" seed="7" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".045"/></feComponentTransfer></filter>
+</defs>
+<rect width="1280" height="720" fill="url(#bg)"/><rect width="1280" height="720" fill="url(#light)"/>
+<path d="M0 0L400 0L610 720L320 720Z" fill="#e6c085" opacity=".035"/><path d="M1280 0L920 0L675 720L920 720Z" fill="#e6c085" opacity=".035"/>
+<rect width="1280" height="720" filter="url(#grain)"/>
+<g font-family="DejaVu Sans,Arial,sans-serif" text-anchor="middle">
+<text x="640" y="119" font-size="24" font-weight="700" fill="#f0c584" letter-spacing="8">AN INVENTORY SYSTEMS PRODUCTION</text>
+<text x="645" y="270" font-size="89" font-weight="900" fill="#000" opacity=".8" filter="url(#shadow)">THE GOOD</text>
+<text x="640" y="263" font-size="89" font-weight="900" fill="url(#metal)">THE GOOD</text>
+<text x="645" y="371" font-size="89" font-weight="900" fill="#000" opacity=".8" filter="url(#shadow)">THE BAD</text>
+<text x="640" y="364" font-size="89" font-weight="900" fill="url(#metal)">THE BAD</text>
+<text x="645" y="472" font-size="89" font-weight="900" fill="#000" opacity=".8" filter="url(#shadow)">THE UGLY</text>
+<text x="640" y="465" font-size="89" font-weight="900" fill="url(#metal)">THE UGLY</text>
+<text x="640" y="537" font-size="29" font-weight="700" fill="#e4e8f0" letter-spacing="7">INVENTORY EDITION</text>
+<line x1="405" y1="579" x2="875" y2="579" stroke="#e7bd77" stroke-width="2"/>
+<text x="640" y="617" font-size="19" font-weight="700" fill="#bdc5ce" letter-spacing="4">A WORKPLACE TRAINING TRAILER</text>
+</g>
+<g transform="translate(1080,570)"><circle cx="0" cy="0" r="48" fill="#0a1220" opacity=".85" stroke="#e5bd7d" stroke-width="3"/><path d="M-13-24 L24 0 L-13 24Z" fill="#f3d28f"/></g>
+</svg>
