@@ -74,7 +74,7 @@
                         
                         {% assign card_image = item['main-image'] %}
                         {% if item.url contains '/inventory-operations-systems-design/' %}
-                            {% assign inventory_card_path = '/assets/images/inventory-operations-systems-design/inventory-operations-workflow-infographic.png' %}
+                            {% assign inventory_card_path = '/assets/images/inventory-operations-systems-design/inventory-operations-digital-to-physical.webp' %}
                             {% assign inventory_card_file = site.static_files | where: 'path', inventory_card_path | first %}
                             {% if inventory_card_file %}
                                 {% assign card_image = inventory_card_path %}
