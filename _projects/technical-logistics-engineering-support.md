@@ -3,10 +3,10 @@ layout: post
 permalink: /projects/technical-logistics-engineering-support/
 title: "Logistics & Engineering Support"
 description: "Coordinating technical freight across Canada and international supply chains, including overseas prototypes, ocean-to-inland shipments, cross-border paperwork, and customs-broker handoffs."
-main-image: /assets/images/technical-logistics-engineering-support/shipping-container-crane-transfer.webp
+main-image: /assets/images/technical-logistics-engineering-support/winter-modular-enclosure-crane-lift.webp
 cover_position: center center
-cover_alt: "Anonymized visualization of crane-assisted container transfer outside an industrial receiving facility."
-cover_caption: "AI-assisted privacy-edited adaptation of an original freight-handling photograph; identifying marks removed and some details may differ."
+cover_alt: "Anonymized, privacy-edited image of a crane lifting a prefabricated industrial equipment enclosure in a snowy yard."
+cover_caption: "AI-assisted privacy-edited adaptation of an industrial freight-handling photograph; company identifiers removed and details may differ."
 portfolio_type: "Professional Technical Operations & International Logistics"
 institution: "Industrial Rail Engineering & Workshop Operations (anonymized)"
 show_in_portfolio: true
