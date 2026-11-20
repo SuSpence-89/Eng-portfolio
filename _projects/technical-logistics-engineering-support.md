@@ -3,10 +3,10 @@ layout: post
 permalink: /projects/technical-logistics-engineering-support/
 title: "Logistics & Engineering Support"
 description: "Coordinating technical freight across Canada and international supply chains, including overseas prototypes, ocean-to-inland shipments, cross-border paperwork, and customs-broker handoffs."
-main-image: /assets/images/project-under-construction.png.png
+main-image: /assets/images/technical-logistics-engineering-support/shipping-container-crane-transfer.webp
 cover_position: center center
-cover_alt: "International technical freight coordination — portfolio cover artwork pending."
-cover_caption: "Project image under development; no confidential shipment records are displayed."
+cover_alt: "Anonymized visualization of crane-assisted container transfer outside an industrial receiving facility."
+cover_caption: "AI-assisted privacy-edited adaptation of an original freight-handling photograph; identifying marks removed and some details may differ."
 portfolio_type: "Professional Technical Operations & International Logistics"
 institution: "Industrial Rail Engineering & Workshop Operations (anonymized)"
 show_in_portfolio: true
@@ -96,6 +96,51 @@ A related international-shipping work-instruction reference organizes the work i
 6. **Close the loop:** Reconcile shipment details, communicate delivery status, and preserve appropriate records for follow-up.
 
 This is a **process reference**, not a claim that every listed step was performed on every shipment or that the work instruction was formally adopted as company policy.
+
+## Photographs — industrial freight handling and transportation
+
+The examples below show the kinds of cargo, vehicle arrangements, and material-handling interfaces involved in technical logistics: large equipment on flatbeds, tilt-deck equipment, crane-assisted transfers, and bundled fabricated steel. These photographs help illustrate why accurate cargo dimensions, loading access, carrier suitability, and coordination with receiving personnel matter. They are **representative freight-handling images**, not a claim that each photographed load belongs to one of the specific overseas shipments discussed above.
+
+<div class="logistics-photo-gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px;align-items:start;margin:22px 0;">
+  <figure style="margin:0;">
+    <a href="{{ '/assets/images/technical-logistics-engineering-support/insulated-tank-flatbed-loading.webp' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/images/technical-logistics-engineering-support/insulated-tank-flatbed-loading.webp' | relative_url }}" alt="An insulated industrial tank assembly positioned on a flatbed trailer" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:8px;" />
+    </a>
+    <figcaption style="font-size:0.88rem;line-height:1.5;margin-top:7px;">Large insulated equipment assembly positioned for shipment on a flatbed trailer.</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <a href="{{ '/assets/images/technical-logistics-engineering-support/tilt-deck-trailer-equipment-loading.webp' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/images/technical-logistics-engineering-support/tilt-deck-trailer-equipment-loading.webp' | relative_url }}" alt="Tilt-deck trailer in a workshop" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:8px;" />
+    </a>
+    <figcaption style="font-size:0.88rem;line-height:1.5;margin-top:7px;">Tilt-deck transportation equipment used for the movement of industrial freight.</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <a href="{{ '/assets/images/technical-logistics-engineering-support/winter-modular-enclosure-crane-lift.webp' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/images/technical-logistics-engineering-support/winter-modular-enclosure-crane-lift.webp' | relative_url }}" alt="Prefabricated enclosure being transferred with a crane" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:8px;" />
+    </a>
+    <figcaption style="font-size:0.88rem;line-height:1.5;margin-top:7px;">Lifting and transfer of a large prefabricated enclosure in winter conditions.</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <a href="{{ '/assets/images/technical-logistics-engineering-support/fabricated-steel-members-bundled-for-shipping.webp' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/images/technical-logistics-engineering-support/fabricated-steel-members-bundled-for-shipping.webp' | relative_url }}" alt="Bundled fabricated steel sections for freight shipment" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:8px;" />
+    </a>
+    <figcaption style="font-size:0.88rem;line-height:1.5;margin-top:7px;">Long fabricated steel components bundled and supported for transportation.</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <a href="{{ '/assets/images/technical-logistics-engineering-support/forklift-assisted-steel-member-staging.webp' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/images/technical-logistics-engineering-support/forklift-assisted-steel-member-staging.webp' | relative_url }}" alt="Material handler staging long steel components" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:8px;" />
+    </a>
+    <figcaption style="font-size:0.88rem;line-height:1.5;margin-top:7px;">Material-handling equipment aligned behind staged long steel members.</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <a href="{{ '/assets/images/technical-logistics-engineering-support/industrial-tank-flatbed-alt-view.webp' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/images/technical-logistics-engineering-support/industrial-tank-flatbed-alt-view.webp' | relative_url }}" alt="Alternate perspective on the industrial tank and flatbed" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:8px;" />
+    </a>
+    <figcaption style="font-size:0.88rem;line-height:1.5;margin-top:7px;">An alternate perspective showing the transport footprint of an insulated tank assembly.</figcaption>
+  </figure>
+</div>
+
+*Photo disclosure: These are AI-assisted, privacy-edited adaptations of supplied workplace photographs. Company names and logos were removed; appearance and fine equipment details may not precisely match the source photographs. They should not be treated as original engineering or rigging records. Heavy-equipment operation and lift planning are not represented here as my personal responsibilities.*
 
 ## Why engineering knowledge mattered
 
